@@ -1,4 +1,4 @@
-# 🧠 Web3 Open Risk Framework
+# 🗻Web3 Open Risk Framework
 
 An open-source structure for mapping and understanding crypto-native risks – from smart contracts to governance failures.
 
