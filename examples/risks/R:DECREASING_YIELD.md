@@ -13,11 +13,11 @@ owners:
   - INVESTOR
   - PROTOCOL_TEAM
   - PLATFORM_OPERATOR
-investmentImpact:
-  - objective: YIELD
+objectives:
+  - type: YIELD
     direction: DECREASE
     goal: INCREASE
-  - objective: VALUE
+  - type: VALUE
     direction: DECREASE
     goal: INCREASE
 indicatorWeights:
