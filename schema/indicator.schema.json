@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Web3 Indicator Entry",
+  "type": "object",
+  "required": ["id", "type", "title", "version", "lastUpdate"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^I:[A-Z_]+$"
+    },
+    "type": {
+      "type": "string",
+      "const": "Indicator"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "number",
+      "minimum": 0
+    },
+    "lastUpdate": {
+      "type": "string",
+      "format": "date"
+    },
+    "thresholds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["level", "label"],
+        "properties": {
+          "level": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "label": {
+            "type": "string"
+          },
+          "operator": {
+            "type": "string",
+            "enum": [">", "<"]
+          },
+          "value": {
+            "type": "number"
+          },
+          "range": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "anyOf": [
+          { "required": ["operator", "value"] },
+          { "required": ["range"] }
+        ]
+      }
+    },
+    "profiles": {
+      "type": "object",
+      "properties": {
+        "conservative": {
+          "type": "object",
+          "properties": {
+            "alertAbove": { "type": "number" }
+          },
+          "required": ["alertAbove"]
+        },
+        "moderate": {
+          "type": "object",
+          "properties": {
+            "alertAbove": { "type": "number" }
+          },
+          "required": ["alertAbove"]
+        },
+        "aggressive": {
+          "type": "object",
+          "properties": {
+            "alertAbove": { "type": "number" }
+          },
+          "required": ["alertAbove"]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
