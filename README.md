@@ -6,25 +6,28 @@ An open-source structure for mapping and understanding crypto-native risks – f
 
 ## 🔍 Why We Built This
 
-Web3 has unlocked a new world of financial autonomy and innovation — but it also comes with complex, layered, and often invisible risks.
+Web3 has unlocked a new world of financial autonomy and innovation,  
+but it also introduces complex, layered, and often opaque risks.
 
 We’ve seen:
-- Bridges exploited.
-- Stablecoins depegged.
-- Governance manipulated.
-- Users blind-signing transactions into oblivion.
+- Cross-chain bridges exploited.
+- Stablecoins losing their peg and triggering systemic effects.
+- Governance processes subject to manipulation.
+- Users signing opaque transactions without proper validation.
 
-Yet most tools reduce risk to a number, a badge, or a checkbox.
+Despite this, most tools still reduce risk to a simplistic score, a badge, or a compliance checkbox.
 
-This framework was born out of necessity:  
-To move from **scoring** to **understanding**.  
-From “DYOR” memes to a system that maps:
-- **What can go wrong?**
-- **Where does it happen?**
-- **Who can act?**
-- **What’s at stake?**
+This framework was developed to address a critical gap:  
+the absence of structured, transparent methodologies for understanding risk in decentralized systems.  
+It aims to move beyond vague slogans like “do your own research” —  
+towards a framework that systematically answers:
+- **What can go wrong?**  
+- **Where does it occur?**  
+- **Who is responsible?**  
+- **What are the potential consequences?**
 
-We built it for ourselves – and now we’re sharing it for others who want to do better.
+We originally built this to support our own risk analysis.  
+Now we’re sharing it — for those who want to approach risk with clarity, consistency, and accountability.
 
 ---
 
