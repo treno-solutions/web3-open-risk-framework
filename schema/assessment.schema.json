@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Risk Assessment Entry",
+  "type": "object",
+  "required": ["riskId", "date", "assessedBy", "severity", "likelihood", "persistence", "riskStatus"],
+  "properties": {
+    "riskId": {
+      "type": "string",
+      "pattern": "^R:[A-Z_]+$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "assessedBy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
+    },
+    "likelihood": {
+      "type": "string",
+      "enum": ["UNLIKELY", "POSSIBLE", "LIKELY", "CERTAIN"]
+    },
+    "persistence": {
+      "type": "string",
+      "enum": ["TEMPORARY", "OCCASIONAL", "PERSISTENT"]
+    },
+    "riskStatus": {
+      "type": "string",
+      "enum": ["MONITORED", "STABLE", "ESCALATING", "CRITICAL"]
+    },
+    "triggeredMeasures": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^M:[A-Z_]+$"
+      }
+    },
+    "indicators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "weight"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^I:[A-Z_]+$"
+          },
+          "weight": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
