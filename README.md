@@ -76,7 +76,7 @@ This repository is organized by function. Each file defines a reusable part of t
 |-------------------------------------------|-------------------------------------------------------------------------|
 | [`categories.md`](./categories.md)        | Defines the eight core **Risk Categories**, each with a clear scope     |
 | [`types.md`](./types.md)                  | Differentiates **quantitative**, **qualitative**, and **hybrid** risks  |
-| [`scope.md`](./scope.md)                  | Specifies where a risk is triggered – e.g., **TRADE**, **GOVERNANCE**, etc.|
+| [`scopes.md`](./scopes.md)                  | Specifies where a risk is triggered – e.g., **TRADE**, **GOVERNANCE**, etc.|
 | [`objectives.md`](./objectives.md)                | Maps risks to **investment objectives** like value, yield, or trust     |
 | [`owners.md`](./owners.md)                | Defines a layered model of **Risk Owners** and their capabilities       |
 | [`risk.md`](./risk.md)                    | A complete Markdown **template** to document an individual risk         |
