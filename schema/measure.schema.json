@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Web3 Risk Mitigation Measure",
+  "type": "object",
+  "required": [
+    "ID",
+    "Type",
+    "Title",
+    "Last Update",
+    "Version",
+    "ImpactPotential",
+    "RiskReductionScope"
+  ],
+  "properties": {
+    "ID": {
+      "type": "string",
+      "pattern": "^M:[A-Z_]+$"
+    },
+    "Type": {
+      "type": "string",
+      "const": "Measure"
+    },
+    "Title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "Last Update": {
+      "type": "string",
+      "format": "date"
+    },
+    "Version": {
+      "type": "number",
+      "minimum": 0
+    },
+    "ImpactPotential": {
+      "type": "string",
+      "enum": ["Low", "Medium", "High"]
+    },
+    "RiskReductionScope": {
+      "type": "object",
+      "required": ["Severity", "Likelihood", "Persistence"],
+      "properties": {
+        "Severity": { "type": "boolean" },
+        "Likelihood": { "type": "boolean" },
+        "Persistence": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
