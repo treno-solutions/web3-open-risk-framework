@@ -17,11 +17,50 @@ Basic identifier and classification details.
 Example:
 
 ```yaml
-ID: I:VOLATILITY
-Type: Indicator
-Title: Volatility
-Last Update: 2024-05-28
-Version: 0.1
+id: I:VOLATILITY
+type: Indicator
+title: Volatility
+version: 0.1
+lastUpdate: 2025-06-04
+
+# For dashboards / scoring engines
+riskDimensions:
+  - SEVERITY
+
+# Calculation hint or linked method
+method: "rolling_stddev(log_returns, window=30)"
+
+# Default threshold levels for scoring (optional but useful for UI and alerts)
+thresholds:
+  - level: 5
+    label: VERY_HIGH
+    operator: ">"
+    value: 60
+  - level: 4
+    label: HIGH
+    range: [40, 60]
+  - level: 3
+    label: MEDIUM
+    range: [20, 40]
+  - level: 2
+    label: LOW
+    range: [10, 20]
+  - level: 1
+    label: VERY_LOW
+    operator: "<"
+    value: 10
+
+# Optional but helpful for weighting logic
+defaultWeight: 1.0
+
+# Optional: standard config for different investor risk profiles
+profiles:
+  conservative:
+    alertAbove: 40
+  moderate:
+    alertAbove: 50
+  aggressive:
+    alertAbove: 60
 ```
 
 ---
