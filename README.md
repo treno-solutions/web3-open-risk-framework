@@ -48,7 +48,7 @@ This framework includes:
 - 🔁 **Scope of Action**  
   Tags to describe in which part of the system a risk occurs or becomes relevant.
 
-- 🎯 **Investment Impact Model**  
+- 🎯 **Investment Objectives Model**  
   A tagging system to express how a risk affects value, yield, liquidity, or trust.
 
 - 🛡 **Risk Owner Model**  
@@ -77,7 +77,7 @@ This repository is organized by function. Each file defines a reusable part of t
 | [`categories.md`](./categories.md)        | Defines the eight core **Risk Categories**, each with a clear scope     |
 | [`types.md`](./types.md)                  | Differentiates **quantitative**, **qualitative**, and **hybrid** risks  |
 | [`scope.md`](./scope.md)                  | Specifies where a risk is triggered – e.g., **TRADE**, **GOVERNANCE**, etc.|
-| [`impact.md`](./impact.md)                | Maps risks to **investment objectives** like value, yield, or trust     |
+| [`objectives.md`](./objectives.md)                | Maps risks to **investment objectives** like value, yield, or trust     |
 | [`owners.md`](./owners.md)                | Defines a layered model of **Risk Owners** and their capabilities       |
 | [`risk.md`](./risk.md)                    | A complete Markdown **template** to document an individual risk         |
 | [`indicator.md`](./indicator.md)          | Describes how to define **signals** and **metrics** that track a risk   |
