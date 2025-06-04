@@ -79,15 +79,16 @@ This repository is organized by function. Each file defines a reusable part of t
 |-------------------------------------------|-------------------------------------------------------------------------|
 | [`categories.md`](./categories.md)        | Defines the eight core **Risk Categories**, each with a clear scope     |
 | [`types.md`](./types.md)                  | Differentiates **quantitative**, **qualitative**, and **hybrid** risks  |
-| [`scopes.md`](./scopes.md)                  | Specifies where a risk is triggered – e.g., **TRADE**, **GOVERNANCE**, etc.|
-| [`objectives.md`](./objectives.md)                | Maps risks to **investment objectives** like value, yield, or trust     |
+| [`scopes.md`](./scopes.md)                | Specifies where a risk is triggered – e.g., **TRADE**, **GOVERNANCE**, etc. |
+| [`objectives.md`](./objectives.md)        | Maps risks to **investment objectives** like value, yield, or trust     |
 | [`owners.md`](./owners.md)                | Defines a layered model of **Risk Owners** and their capabilities       |
 | [`risk.md`](./risk.md)                    | A complete Markdown **template** to document an individual risk         |
 | [`indicator.md`](./indicator.md)          | Describes how to define **signals** and **metrics** that track a risk   |
 | [`measure.md`](./measure.md)              | Describes how to define a **measure** to mitigate a risk                |
-| [`assessment.md`](./assessment.md)        | Defines how to perform structured **risk assessments**, with or without indicators |
-| [`philosophy.md`](./philosophy.md) | Describes the **methodology**, **principles**, and external **influences** behind this framework |
+| [`assessment.md`](./assessment.md)        | Outlines how to assess risks using structured methods — either qualitatively or supported by quantitative indicators |
+| [`philosophy.md`](./philosophy.md)        | Describes the **methodology**, **principles**, and external **influences** behind this framework |
 | [`terminology.md`](./terminology.md)      | Defines key terms and concepts used throughout the framework for consistent understanding and usage |
+
 
 Each component is designed to be forked, extended, or integrated into your own catalog or application.
 
