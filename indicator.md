@@ -93,7 +93,7 @@ Define how the indicator translates into a risk level using thresholds. Include 
 
 ---
 
-## ⚙️ Standard Configurations
+## ⚙️ Standard Configurations (optional)
 
 These values define what each investor profile considers “acceptable” or “concerning” based on their risk appetite.
 
