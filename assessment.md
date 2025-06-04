@@ -45,6 +45,87 @@ Each dimension can be rated using a 3- or 5-step scale. Example:
 
 ---
 
+## 🧾 Valid Risk Assessment Values (Enums)
+
+To ensure consistent evaluations, the Web3 Open Risk Framework defines fixed value ranges (enums) for each core assessment field. These enums support standardized scoring, dashboards, and communication.
+
+---
+
+### **Severity** (Impact Magnitude)
+
+| Value       | Meaning                                               |
+|-------------|--------------------------------------------------------|
+| NEGLIGIBLE  | Barely noticeable or minor impact                     |
+| MODERATE    | Noticeable but manageable impact                      |
+| CRITICAL    | Serious disruption to capital, trust, or operations   |
+| EXTREME     | Systemic, potentially existential impact              |
+
+---
+
+### **Likelihood** (Probability of Occurrence)
+
+| Value     | Meaning                                                  |
+|-----------|----------------------------------------------------------|
+| RARE      | Very unlikely, requires special conditions               |
+| POSSIBLE  | Could happen under current conditions                    |
+| LIKELY    | High probability of occurrence                           |
+| CERTAIN   | Practically guaranteed, already manifesting              |
+
+---
+
+### **Persistence** (Duration or Recurrence)
+
+| Value       | Meaning                                                        |
+|-------------|----------------------------------------------------------------|
+| TEMPORARY   | Short-lived, situation-specific                                |
+| RECURRING   | Appears periodically (e.g., cyclical or event-triggered)       |
+| PERSISTENT  | Ongoing, continuously present                                  |
+| PERMANENT   | Structural risk, permanently embedded (e.g., in governance)    |
+
+---
+
+### **Risk Status** (Current Trend or Development)
+
+| Value        | Meaning                                                  |
+|--------------|----------------------------------------------------------|
+| MONITORED    | Under observation, no immediate action required          |
+| ESCALATING   | Indicators worsening, active attention needed            |
+| STABLE       | No significant changes, risk remains constant            |
+| DEESCALATING | Improving trend, pressure decreasing                     |
+| RESOLVED     | Risk has been mitigated or is no longer relevant         |
+
+---
+
+### **Impact Potential** (Effectiveness of the Measure)
+
+| Value   | Meaning                                                      |
+|---------|--------------------------------------------------------------|
+| LOW     | Soft impact, acts as signal or backup control                |
+| MEDIUM  | Moderately effective, improves portfolio exposure or quality |
+| HIGH    | Strong mitigation, major structural protection               |
+
+---
+
+### **Risk Reduction Scope** (What the Measure Reduces)
+
+| Value       | Meaning                                     |
+|-------------|---------------------------------------------|
+| SEVERITY    | Reduces the damage if the risk occurs       |
+| LIKELIHOOD  | Makes the risk less likely to occur         |
+| PERSISTENCE | Shortens or interrupts risk duration        |
+
+---
+
+### **Difficulty** (Implementation Effort)
+
+| Value   | Meaning                                                                  |
+|---------|--------------------------------------------------------------------------|
+| EASY    | Manual execution, no tools or deep knowledge required                   |
+| MEDIUM  | Requires tools or domain-specific expertise                             |
+| HARD    | Requires modeling, automation, or cross-platform orchestration          |
+
+---
+
 ## 🔁 Indicator Integration
 
 If the risk is **quantitative** or **hybrid**, link live or historical indicators:
