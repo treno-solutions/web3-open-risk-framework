@@ -21,7 +21,7 @@ By referencing well-known standards, we aim to bridge traditional expectations w
 |-------------------------------------------|-------------------------------------------------------------|
 | Establishing the context                  | `Context` section in each risk definition                  |
 | Risk identification                       | Catalog of risks structured by `category`, `scope`, `type` |
-| Risk analysis and evaluation              | `Assessment`, supported by `Indicators` and `Impact`       |
+| Risk analysis and evaluation              | `Assessment`, supported by `Indicators` and `Investment Objectives` |
 | Risk treatment (mitigation)               | Linked `Measures` per risk                                 |
 | Communication and consultation            | Markdown format allows shared, versioned documentation     |
 | Monitoring and review                     | Indicator weighting enables continuous assessment updates  |
@@ -33,7 +33,7 @@ By referencing well-known standards, we aim to bridge traditional expectations w
 | COSO Element                    | Applied How?                                                  |
 |--------------------------------|---------------------------------------------------------------|
 | Governance & culture           | `Risk Owner Model` assigns layered accountability             |
-| Strategy and objective-setting | `Investment Impact Model` ties risks to investor priorities   |
+| Strategy and objective-setting | `Investment Objective Model` ties risks to investor priorities   |
 | Performance and response       | Measures linked to each risk, supporting proactive mitigation |
 | Information & communication    | Human-readable and machine-readable templates (Markdown/YAML) |
 | Review and revision            | Risks are version-controlled and adaptable                    |
@@ -47,7 +47,7 @@ By referencing well-known standards, we aim to bridge traditional expectations w
 | Use of quantitative thresholds     | `Indicators` (e.g., Utilization Ratio, APY Trend)               |
 | Scenario-based risk evaluation     | Severity/Likelihood/Persistence model in `Assessment`          |
 | Risk aggregation and diversification | Can be modeled via Excel correlation overlays                  |
-| Capital exposure & risk profiles  | `Impact` mapped to value, yield, cost, and liquidity objectives |
+| Capital exposure & risk profiles | `Objectives` include value, yield, cost, and liquidity, as defined in the objective model |
 
 ---
 
