@@ -33,17 +33,26 @@ scopes:                        # (optional)
   - APPLICATION
 owners:                        # (optional)
   - PROTOCOL_TEAM              # One or more from `owners.md`
-investmentImpact:              # (optional)
-  - objective: VALUE
+objectives:                    # (optional)
+  - type: VALUE
     direction: DECREASE
     goal: INCREASE             # Desired direction (e.g., lower cost, higher yield)
-  - objective: TRUST
+  - type: TRUST
     direction: DECREASE
     goal: INCREASE
 measures:                      # (optional)
   - id: M:SUBSTITUTION
   - id: M:HEDGING
-
+indicatorWeights:              # (optional) Weighted influence of individual indicators on risk dimensions
+  "I:UTILIZATION_RATIO":
+    weight: 0.6
+    affects:
+      SEVERITY: INCREASE
+      PERSISTENCE: INCREASE
+  "I:LENDING_APY_TREND":
+    weight: 1.0
+    affects:
+      LIKELIHOOD: INCREASE
 ```
 
 ---
@@ -71,6 +80,14 @@ Examples:
 
 Indicators are defined in a separate file and linked to this risk by ID. Use this section to show the link explicitly here.
 
+Indicators are defined in a separate file and linked to this risk by ID.
+Each indicator can influence different risk dimensions such as severity, likelihood, or persistence.
+
+Use the indicatorWeights field to:
+- assign weights to multiple indicators
+- declare which dimensions they affect
+- specify the direction of influence (INCREASE / DECREASE)
+
 ---
 
 ## 🛠 Measures (optional)
@@ -87,8 +104,12 @@ This section is meant to help prioritize risks and guide decision-making.
 Indicators may be linked to this risk to support a more data-driven assessment.  
 Each linked indicator represents a possible signal or measurement for this risk becoming active.
 
-- If a risk has **one indicator**, it is assumed to carry **100% relevance** for triggering this risk.
-- If **multiple indicators** are used, they are **collectively weighted**, and each contributes to the likelihood of the risk in practice.
+If a risk has **one indicator**, it is assumed to carry **100% relevance** for triggering this risk.
+
+If multiple indicators are used, use the indicatorWeights block to:
+- assign specific weights to each
+- map each to one or more affected risk dimensions (severity, likelihood, persistence)
+- define whether the indicator tends to increase or decrease the risk
 
 You may also include qualitative remarks on:
 - Persistence over time
