@@ -24,7 +24,7 @@ The other sections can then be filled in later, based on your priorities or reso
 ## 🧩 Metadata
 
 ```yaml
-id: R:RISK-TITLE
+id: "R:RISK-TITLE"
 title: Example Risk Title
 category: CONTRACT             # One of the values from `categories.md`
 type: HYBRID                   # One of: QUANTITATIVE / QUALITATIVE / HYBRID
@@ -44,12 +44,12 @@ measures:                      # (optional)
   - id: M:SUBSTITUTION
   - id: M:HEDGING
 indicatorWeights:              # (optional) Weighted influence of individual indicators on risk dimensions
-  "I:UTILIZATION_RATIO":
+  - id: "I:UTILIZATION_RATIO"
     weight: 0.6
     affects:
       SEVERITY: INCREASE
       PERSISTENCE: INCREASE
-  "I:LENDING_APY_TREND":
+  - id: "I:LENDING_APY_TREND"
     weight: 1.0
     affects:
       LIKELIHOOD: INCREASE
