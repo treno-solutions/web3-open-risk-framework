@@ -21,7 +21,7 @@ The other sections can then be filled in later, based on your priorities or reso
 
 ---
 
-## 🧩 Metadata
+## 🧩 Metadata (mandatory)
 
 ```yaml
 id: "R:RISK-TITLE"
