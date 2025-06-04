@@ -23,13 +23,6 @@ title: Volatility
 version: 0.1
 lastUpdate: 2025-06-04
 
-# For dashboards / scoring engines
-riskDimensions:
-  - SEVERITY
-
-# Calculation hint or linked method
-method: "rolling_stddev(log_returns, window=30)"
-
 # Default threshold levels for scoring (optional but useful for UI and alerts)
 thresholds:
   - level: 5
@@ -49,9 +42,6 @@ thresholds:
     label: VERY_LOW
     operator: "<"
     value: 10
-
-# Optional but helpful for weighting logic
-defaultWeight: 1.0
 
 # Optional: standard config for different investor risk profiles
 profiles:
