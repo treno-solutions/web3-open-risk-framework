@@ -116,7 +116,7 @@ Whether you're:
 
 This repository offers a pragmatic, extensible foundation for structured risk reasoning.
 
-> **Note:** This repository contains the _framework_ only. A full risk catalog, indicator data, or live dashboards are **not** included.
+> **Disclaimer:** This repository contains the _framework_ only. A full risk catalog, indicator data, or live dashboards are **not** included.
 
 ---
 
