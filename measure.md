@@ -20,8 +20,13 @@ Example:
 ID: M:SUBSTITUTION
 Type: Measure
 Title: Asset Substitution
-Last Update: 2024-05-28
-Version: 1.0
+Last Update: 2025-06-04
+Version: 1.1
+ImpactPotential: High         # One of: Low, Medium, High
+RiskReductionScope:
+  Severity: true
+  Likelihood: true
+  Persistence: false
 ```
 
 ---
