@@ -17,122 +17,55 @@ The assessment process helps answer:
 
 Assessments are critical for:
 
-- Prioritization in dashboards or reports
-- Triggering mitigations or alerts
-- Communicating urgency and confidence
+- Prioritization in dashboards or reports  
+- Triggering mitigations or alerts  
+- Communicating urgency and confidence  
 
 ---
 
 ## ⚙️ Assessment Parameters
 
-Every risk can be assessed across three core dimensions:
+Each risk is evaluated across three key dimensions:
 
 | Dimension       | Description                                                                                                                             |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Severity**    | The magnitude of negative impact if the risk materializes. Consider affected objectives like value, access, trust, legal status, etc.   |
-| **Likelihood**  | The probability of the risk becoming active in the current or near-future system state. Can be linked to indicators or expert judgment. |
-| **Persistence** | Whether the risk is ongoing, temporary, or only present under specific conditions. Also captures whether it is likely to reoccur.       |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| **Severity**    | How serious are the consequences if the risk materializes? Consider the impact on value, access, trust, regulation, or solvency.        |
+| **Likelihood**  | How probable is it that the risk occurs under current or foreseeable conditions?                                                        |
+| **Persistence** | Is the risk temporary, recurring, or continuously present? Also captures if the risk is embedded structurally.                          |
 
-Each dimension can be rated using a 3- or 5-step scale. Example:
+Use either a 3- or 5-point scale depending on the complexity of your scoring model.
+
+Example (3-point scale):
 
 | Level | Severity   | Likelihood | Persistence |
-| ----- | ---------- | ---------- | ----------- |
+|-------|------------|------------|-------------|
 | 1     | Negligible | Rare       | Temporary   |
 | 2     | Moderate   | Possible   | Recurring   |
 | 3     | Critical   | Likely     | Persistent  |
 
-(Alternative scales: Low / Medium / High / Very High / Extreme)
-
 ---
 
-## 🧾 Valid Risk Assessment Values (Enums)
+## 🧾 Accepted Values
 
-To ensure consistent evaluations, the Web3 Open Risk Framework defines fixed value ranges (enums) for each core assessment field. These enums support standardized scoring, dashboards, and communication.
+Each field in a risk assessment uses a predefined set of values (enums) to ensure consistency across dashboards, reports, and automated systems. These values are **not defined globally**, but directly in the documents that introduce and explain them in context.
 
----
+For reference:
 
-### **Severity** (Impact Magnitude)
+- **Severity**, **Likelihood**, **Persistence**, and **Risk Status** are defined in this file under *Assessment Parameters* and the corresponding explanation tables.
 
-| Value       | Meaning                                               |
-|-------------|--------------------------------------------------------|
-| NEGLIGIBLE  | Barely noticeable or minor impact                     |
-| MODERATE    | Noticeable but manageable impact                      |
-| CRITICAL    | Serious disruption to capital, trust, or operations   |
-| EXTREME     | Systemic, potentially existential impact              |
+- **Impact Potential**, **Risk Reduction Scope**, and **Difficulty** are defined in [`measures.md`](./measures.md), where they describe the effectiveness and feasibility of a mitigation strategy.
 
----
-
-### **Likelihood** (Probability of Occurrence)
-
-| Value     | Meaning                                                  |
-|-----------|----------------------------------------------------------|
-| RARE      | Very unlikely, requires special conditions               |
-| POSSIBLE  | Could happen under current conditions                    |
-| LIKELY    | High probability of occurrence                           |
-| CERTAIN   | Practically guaranteed, already manifesting              |
-
----
-
-### **Persistence** (Duration or Recurrence)
-
-| Value       | Meaning                                                        |
-|-------------|----------------------------------------------------------------|
-| TEMPORARY   | Short-lived, situation-specific                                |
-| RECURRING   | Appears periodically (e.g., cyclical or event-triggered)       |
-| PERSISTENT  | Ongoing, continuously present                                  |
-| PERMANENT   | Structural risk, permanently embedded (e.g., in governance)    |
-
----
-
-### **Risk Status** (Current Trend or Development)
-
-| Value        | Meaning                                                  |
-|--------------|----------------------------------------------------------|
-| MONITORED    | Under observation, no immediate action required          |
-| ESCALATING   | Indicators worsening, active attention needed            |
-| STABLE       | No significant changes, risk remains constant            |
-| DEESCALATING | Improving trend, pressure decreasing                     |
-| RESOLVED     | Risk has been mitigated or is no longer relevant         |
-
----
-
-### **Impact Potential** (Effectiveness of the Measure)
-
-| Value   | Meaning                                                      |
-|---------|--------------------------------------------------------------|
-| LOW     | Soft impact, acts as signal or backup control                |
-| MEDIUM  | Moderately effective, improves portfolio exposure or quality |
-| HIGH    | Strong mitigation, major structural protection               |
-
----
-
-### **Risk Reduction Scope** (What the Measure Reduces)
-
-| Value       | Meaning                                     |
-|-------------|---------------------------------------------|
-| SEVERITY    | Reduces the damage if the risk occurs       |
-| LIKELIHOOD  | Makes the risk less likely to occur         |
-| PERSISTENCE | Shortens or interrupts risk duration        |
-
----
-
-### **Difficulty** (Implementation Effort)
-
-| Value   | Meaning                                                                  |
-|---------|--------------------------------------------------------------------------|
-| EASY    | Manual execution, no tools or deep knowledge required                   |
-| MEDIUM  | Requires tools or domain-specific expertise                             |
-| HARD    | Requires modeling, automation, or cross-platform orchestration          |
+Each of these enums should be treated as normative and stable. When updating or interpreting a risk or a measure, always refer to the original definition in the respective file.
 
 ---
 
 ## 🔁 Indicator Integration
 
-If the risk is **quantitative** or **hybrid**, link live or historical indicators:
+If the risk is **quantitative** or **hybrid**, link relevant indicators:
 
 - Assign **weights** to each linked indicator
-- Use threshold logic (e.g. 7-day moving average crosses X)
-- Highlight **deviation from goal** rather than absolute values
+- Use threshold logic (e.g., 7-day moving average crosses critical value)
+- Highlight **deviation from baseline or target**, not just absolute values
 
 ---
 
@@ -140,27 +73,26 @@ If the risk is **quantitative** or **hybrid**, link live or historical indicator
 
 For qualitative risks:
 
-- Use a **structured review** format or guided checklist
-- Compare against similar risks with known outcomes
-- Involve experts in governance, security, legal, etc.
+- Use a **structured checklist** or comparative case review
+- Reference similar risks with known impact
+- Involve subject matter experts in protocol governance, security, legal, etc.
 
 ---
 
 ## 🗂️ Example Output
 
-Every assessment must include a reference to the risk it evaluates via `riskId`.
-This ensures traceability, versioning, and compatibility with automated processing.
+Each assessment must reference the corresponding risk ID to maintain traceability and version control.
 
 ```yaml
 assessment:
-  riskId: R:DECREASING_YIELD # ← Required: must match a valid risk ID
-  date: 2025-05-29 # ← Optional: for version tracking
-  assessedBy: Analyst-Team A # ← Optional: who performed the assessment
+  riskId: R:DECREASING_YIELD
+  date: 2025-05-29
+  assessedBy: Analyst-Team A
   severity: CRITICAL
   likelihood: POSSIBLE
   persistence: PERSISTENT
-  riskStatus: ESCALATING # ← Optional: high-level risk state
-  triggeredMeasures: # ← Optional: connected mitigation actions
+  riskStatus: ESCALATING
+  triggeredMeasures:
     - M:REALLOCATE_CAPITAL
   indicators:
     - id: I:UTILIZATION_RATIO
