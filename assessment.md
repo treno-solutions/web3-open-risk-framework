@@ -88,10 +88,10 @@ assessment:
   riskId: R:DECREASING_YIELD
   date: 2025-05-29
   assessedBy: Analyst-Team A
-  severity: CRITICAL
-  likelihood: POSSIBLE
-  persistence: PERSISTENT
-  riskStatus: ESCALATING
+  severity: CRITICAL              # Enum: LOW, MEDIUM, HIGH, CRITICAL
+  likelihood: POSSIBLE            # Enum: UNLIKELY, POSSIBLE, LIKELY, CERTAIN
+  persistence: PERSISTENT         # Enum: TEMPORARY, OCCASIONAL, PERSISTENT
+  riskStatus: ESCALATING          # Enum: MONITORED, STABLE, ESCALATING, CRITICAL
   triggeredMeasures:
     - M:REALLOCATE_CAPITAL
   indicators:
