@@ -24,7 +24,7 @@ The other sections can then be filled in later, based on your priorities or reso
 ## 🧩 Metadata
 
 ```yaml
-id: RISK-001
+id: R:RISK-TITLE
 title: Example Risk Title
 category: CONTRACT             # One of the values from `categories.md`
 type: HYBRID                   # One of: QUANTITATIVE / QUALITATIVE / HYBRID
