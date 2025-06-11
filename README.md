@@ -36,6 +36,8 @@ Now we’re sharing it — for those who want to approach risk with clarity, con
 This is not a risk catalog – it’s the foundation to build your own. Use it to think in layers, assign responsibility, and connect risks to action.
 It helps teams and individuals understand Web3 risks in a structured, reusable, and transparent way – without relying on hype or opaque scoring models.
 
+👉 We also explore many of these risks in practice on our [Treno.Finance Blog](https://treno.finance), where we regularly analyze DeFi mechanisms, failure cases, and risk patterns.
+
 ---
 
 ## 🧱 What’s Included
