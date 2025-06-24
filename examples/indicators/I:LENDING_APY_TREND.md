@@ -6,13 +6,13 @@
 | **Title**        | Lending APY Trend        |
 | **Type**         | Indicator                |
 | **Version**      | 1.0                      |
-| **Last Update**  | 2025-05-28               |
+| **Last Update**  | 2025-01-27               |
 
 ---
 
 ## 🧠 Description
 
-Tracks the change in annual percentage yield (APY) for a specific lending pool over time. A consistent downward trend may indicate decreasing protocol competitiveness, shrinking demand, or changes in risk-adjusted returns.
+Tracks the change in annual percentage yield (APY) for a specific lending pool over time. A consistent downward trend may indicate decreasing protocol competitiveness, shrinking demand, or changes in risk-adjusted returns. This indicator helps identify when lending strategies become unsustainable or misaligned with investment objectives.
 
 ---
 
@@ -21,25 +21,28 @@ Tracks the change in annual percentage yield (APY) for a specific lending pool o
 - Minimum historical data span: 30 days  
 - Consistent data source (e.g. Aave, Compound, Spark subgraph)  
 - Preferably net APY after fees and incentives
+- Pool must have sufficient liquidity and trading volume
 
 ---
 
 ## ⚙️ Methodology
 
-- **Data Collection:** Retrieve historical APY data for the lending pool on a daily basis.
-- **Smoothing:** Apply moving average (e.g. 7d or 14d) to reduce short-term noise.
-- **Trend Calculation:** Use linear regression or percentage delta over fixed intervals (e.g. 7/30/90 days).
-- **Threshold Detection:** Define slope thresholds or relative percentage drops to flag significant trends.
-- **Normalization:** Adjust for changes in incentives or liquidity depth to isolate genuine rate trends.
+- **Data Collection:** Retrieve historical APY data for the lending pool on a daily basis
+- **Smoothing:** Apply moving average (e.g. 7d or 14d) to reduce short-term noise
+- **Trend Calculation:** Use linear regression or percentage delta over fixed intervals (e.g. 7/30/90 days)
+- **Threshold Detection:** Define slope thresholds or relative percentage drops to flag significant trends
+- **Normalization:** Adjust for changes in incentives or liquidity depth to isolate genuine rate trends
+- **Benchmarking:** Compare against sector averages or similar protocols
 
 ---
 
 ## ⚠️ Limitations
 
-- **Noise Sensitivity:** APYs can be highly volatile short-term; smoothing must be applied carefully.
-- **Incentives:** Sudden changes in incentive programs may distort perceived trends.
-- **Liquidity Effects:** Shifts in liquidity or utilization rate can affect APY independently of protocol quality.
-- **Benchmarking:** Hard to compare across protocols without normalizing for risk and incentive structure.
+- **Noise Sensitivity:** APYs can be highly volatile short-term; smoothing must be applied carefully
+- **Incentives:** Sudden changes in incentive programs may distort perceived trends
+- **Liquidity Effects:** Shifts in liquidity or utilization rate can affect APY independently of protocol quality
+- **Benchmarking:** Hard to compare across protocols without normalizing for risk and incentive structure
+- **Time Lag:** Historical data may not reflect current market conditions
 
 ---
 
@@ -79,9 +82,10 @@ This indicator is especially useful for:
 - Triggering alerts when yields fall below an investor's target  
 - Informing asset reallocation or early withdrawal decisions  
 - Comparing yield trends across protocols to evaluate performance
+- Monitoring protocol health and market dynamics
 
 ---
 
 ## 🧱 Related Risks
 
-...
+- R:DECREASING_YIELD - Direct correlation with decreasing yield risk

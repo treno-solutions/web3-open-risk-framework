@@ -64,7 +64,7 @@ Example:
 
 ---
 
-## ✅ Preconditions
+## 📋 Preconditions
 
 Specify the conditions that must be met for this indicator to be meaningful or applicable.
 

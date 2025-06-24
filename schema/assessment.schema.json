@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Risk Assessment Entry",
   "type": "object",
-  "required": ["riskId", "date", "assessedBy", "severity", "likelihood", "persistence", "riskStatus"],
+  "required": ["riskId", "date", "assessedBy", "severity", "likelihood", "persistence"],
   "properties": {
     "riskId": {
       "type": "string",
@@ -28,37 +28,74 @@
       "type": "string",
       "enum": ["TEMPORARY", "OCCASIONAL", "PERSISTENT"]
     },
-    "riskStatus": {
-      "type": "string",
-      "enum": ["MONITORED", "STABLE", "ESCALATING", "CRITICAL"]
+    "summary": {
+      "type": "string"
     },
-    "triggeredMeasures": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^M:[A-Z_]+$"
+    "riskClassification": {
+      "type": "object",
+      "properties": {
+        "dimension": { "type": "string" },
+        "rating": { "type": "string" },
+        "explanation": { "type": "string" }
       }
     },
-    "indicators": {
+    "evaluations": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "weight"],
         "properties": {
-          "id": {
-            "type": "string",
-            "pattern": "^I:[A-Z_]+$"
+          "position": { "type": "string" },
+          "indicators": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "string", "pattern": "^I:[A-Z_]+$" },
+                "weight": { "type": "number" },
+                "value": { "type": "string" },
+                "interpretation": { "type": "string" }
+              }
+            }
           },
-          "weight": {
-            "type": "number",
-            "minimum": 0
-          }
+          "riskStatus": {
+            "type": "string",
+            "enum": ["MONITORED", "STABLE", "ESCALATING", "CRITICAL", "ACCEPTABLE"]
+          },
+          "implication": { "type": "string" },
+          "triggeredMeasure": { "type": "string", "pattern": "^M:[A-Z_]+$" },
+          "action": { "type": "string" }
         }
       }
     },
-    "notes": {
-      "type": "string"
-    }
+    "timeline": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "protocol": { "type": "string" },
+          "asset": { "type": "string" },
+          "metric": { "type": "string" },
+          "riskLevel": { "type": "string" },
+          "status": { "type": "string" }
+        }
+      }
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "asset": { "type": "string" },
+          "platform": { "type": "string" },
+          "riskStatus": { "type": "string" },
+          "measure": { "type": "string", "pattern": "^M:[A-Z_]+$" },
+          "action": { "type": "string" }
+        }
+      }
+    },
+    "interpretation": { "type": "string" },
+    "notes": { "type": "string" }
   },
   "additionalProperties": false
 }

@@ -40,7 +40,7 @@ Example:
 
 ---
 
-## ✅ Preconditions
+## 📋 Preconditions
 
 Define the conditions under which this measure is applicable. This ensures the measure is only used where meaningful and technically feasible.
 

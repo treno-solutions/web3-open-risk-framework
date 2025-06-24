@@ -13,11 +13,11 @@ owners:
   - INVESTOR
   - PROTOCOL_TEAM
   - PLATFORM_OPERATOR
-objectives:
-  - type: YIELD
+investmentImpact:
+  - objective: YIELD
     direction: DECREASE
     goal: INCREASE
-  - type: VALUE
+  - objective: VALUE
     direction: DECREASE
     goal: INCREASE
 indicatorWeights:
@@ -43,6 +43,25 @@ This risk is especially relevant for passive investors and treasury managers rel
 
 ---
 
+## 🔁 Scope Justification
+
+```LENDING```:
+The Lending scope applies because decreasing yield directly impacts lending protocol performance and user retention. Yield erosion affects the economic viability of lending strategies and may trigger capital outflows.
+
+```ASSET```:
+The Asset scope applies because yield performance affects the attractiveness and value proposition of yield-bearing assets in a portfolio. Declining yields may justify reallocation to alternative assets.
+
+```APPLICATION```:
+The Application scope applies because yield changes can affect user behavior and protocol adoption, potentially leading to reduced platform usage and revenue.
+
+---
+
+## 🎯 Rationale for Action
+
+Yield erosion impacts investor retention, protocol competitiveness, and overall ecosystem health. Continuous monitoring, proactive reallocation, and clear exit criteria are essential for preserving performance and reducing exposure to income decay in DeFi environments.
+
+---
+
 ## 📌 Pre-Measure Allocation State
 
 | Protocol  | Asset | Allocation | APY   | Utilization | Risk Assessment |
@@ -51,14 +70,6 @@ This risk is especially relevant for passive investors and treasury managers rel
 | Aave      | USDC   | 30%        | 4.3%  | 42%          | 🟢 Low risk, lower yield |
 
 At the time of assessment, the majority of capital was allocated to Compound due to its significantly higher APY. However, utilization levels rose above 80%, breaching internal thresholds and raising concerns about capital efficiency and risk exposure. Utilization above 80% breaches our internal risk tolerance threshold due to heightened liquidity risk.
-
----
-
-## 🎯 Rationale for Action
-
-To mitigate overexposure to potentially stressed liquidity conditions on Compound, the strategy reallocated all capital to Aave, accepting lower yield in exchange for improved stability and utilization metrics.
-
-This aligns with a conservative profile focused on long-term preservation and risk-adjusted returns.
 
 ---
 

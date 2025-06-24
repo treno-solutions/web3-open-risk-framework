@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Web3 Risk Entry",
   "type": "object",
-  "required": ["id", "title", "category", "type", "scopes", "owners", "objectives"],
+  "required": ["id", "title", "category", "type", "scopes", "owners", "investmentImpact"],
   "properties": {
     "id": {
       "type": "string",
@@ -33,14 +33,14 @@
       },
       "minItems": 1
     },
-    "objectives": {
+    "investmentImpact": {
       "type": "array",
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["type", "direction", "goal"],
+        "required": ["objective", "direction", "goal"],
         "properties": {
-          "type": {
+          "objective": {
             "type": "string"
           },
           "direction": {
@@ -88,6 +88,22 @@
         "type": "string",
         "pattern": "^M:[A-Z_]+$"
       }
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "context": {
+      "type": "string"
+    },
+    "scopeJustification": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "rationaleForAction": {
+      "type": "string"
     }
   },
   "additionalProperties": false
