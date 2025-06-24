@@ -120,7 +120,7 @@ An entity or role with the power to mitigate or influence a risk.
 
 Examples:
 
-* `PROTOCOL_TEAM`
+* `TEAM`
 * `DAO_OPERATIONAL_TEAMS`
 * `INFRASTRUCTURE_PROVIDER`
 

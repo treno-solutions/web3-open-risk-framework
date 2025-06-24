@@ -22,13 +22,13 @@ Use this to inform:
 | Enum Value                  | Scope of Responsibility                         | Power to Act | Example Entities                     |
 |-----------------------------|--------------------------------------------------|--------------|--------------------------------------|
 | `INVESTOR`                  | Holds the capital and bears the loss            | Indirect     | Retail users, fund managers          |
-| `PLATFORM_OPERATOR`         | Surfaces and explains risks                     | Indirect     | Treno, TokenLogic, RiskDAO           |
-| `PROTOCOL_TEAM`             | Develops and maintains the application logic    | Direct       | Aave team, Compound Labs, Lido DAO   |
-| `BASE_INFRASTRUCTURE`       | Maintains base blockchain network               | Direct       | Ethereum Foundation, Solana Labs     |
-| `DEPENDENCY_PROVIDER`       | Provides external services to protocols         | Partial      | Chainlink, LayerZero, Fireblocks     |
-| `GOVERNANCE_PARTICIPANT`    | Votes on key decisions                          | Indirect     | Token holders, DAO delegates         |
+| `OPERATOR`         | Surfaces and explains risks                     | Indirect     | Treno, TokenLogic, RiskDAO           |
+| `TEAM`             | Develops and maintains the application logic    | Direct       | Aave team, Compound Labs, Lido DAO   |
+| `BASE`       | Maintains base blockchain network               | Direct       | Ethereum Foundation, Solana Labs     |
+| `PROVIDER`       | Provides external services to protocols         | Partial      | Chainlink, LayerZero, Fireblocks     |
+| `PARTICIPANT`    | Votes on key decisions                          | Indirect     | Token holders, DAO delegates         |
 | `STAKING_OPERATOR`          | Runs infrastructure and secures the network     | Direct       | Solo validators, Lido node operators |
-| `AUDITOR_OR_SECURITY_REVIEWER` | Reviews code and flags risk                   | Advisory     | Trail of Bits, CertiK, Code4rena     |
+| `REVIEWER` | Reviews code and flags risk                   | Advisory     | Trail of Bits, CertiK, Code4rena     |
 
 
 ## 🧍 `INVESTOR`
@@ -45,7 +45,7 @@ Investors cannot directly fix most risks, but they are the ones affected. Their 
 - Participating in DAO votes  
 - Choosing alternative products
 
-## 🛰 `PLATFORM_OPERATOR`
+## 🛰 `OPERATOR`
 
 **Scope:**  
 Risk monitoring platforms and analytics services (e.g. Treno, TokenLogic).
@@ -59,7 +59,7 @@ Not directly responsible for the risk itself, but they provide the **visibility*
 - Surfacing new or emerging risks  
 - Informing investors and teams
 
-## 🏗 `PROTOCOL_TEAM`
+## 🏗 `TEAM`
 
 **Scope:**  
 The team, foundation, or DAO that designs and maintains the application logic.
@@ -73,7 +73,7 @@ They have the most direct power to fix problems, deploy changes, or modify risk-
 - Incident response  
 - Public communication
 
-## ⚙️ `BASE_INFRASTRUCTURE`
+## ⚙️ `BASE`
 
 **Scope:**  
 Layer 1 or Layer 2 networks (e.g. Ethereum, Arbitrum).
@@ -87,7 +87,7 @@ They secure the base layer, define consensus, and affect every application built
 - Infrastructure-level mitigations  
 - Chain-wide coordination
 
-## 🔗 `DEPENDENCY_PROVIDER`
+## 🔗 `PROVIDER`
 
 **Scope:**  
 External services that protocols rely on but do not control.
@@ -104,7 +104,7 @@ They are not part of the protocol but their performance directly affects it.
 - Publishing documentation or fixes  
 - Handling security incidents
 
-## 🧑‍⚖️ `GOVERNANCE_PARTICIPANT`
+## 🧑‍⚖️ `PARTICIPANT`
 
 **Scope:**  
 Token holders or delegates who vote in governance processes.
@@ -132,7 +132,7 @@ They ensure uptime, liveness, and economic finality.
 - Avoiding slashing conditions  
 - Supporting protocol security
 
-## 🧪 `AUDITOR_OR_SECURITY_REVIEWER`
+## 🧪 `REVIEWER`
 
 **Scope:**  
 External security professionals or firms conducting formal reviews.

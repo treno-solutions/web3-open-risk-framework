@@ -11,8 +11,8 @@ scopes:
   - APPLICATION
 owners:
   - INVESTOR
-  - PROTOCOL_TEAM
-  - PLATFORM_OPERATOR
+  - TEAM
+  - OPERATOR
 investmentImpact:
   - objective: YIELD
     direction: DECREASE

@@ -29,7 +29,7 @@ scopes:                        # (optional)
   - TRADE                      # One or more from `scopes.md`
   - APPLICATION
 owners:                        # (optional)
-  - PROTOCOL_TEAM              # One or more from `owners.md`
+  - TEAM              # One or more from `owners.md`
 objectives:                    # (optional)
   - type: VALUE
     direction: DECREASE
