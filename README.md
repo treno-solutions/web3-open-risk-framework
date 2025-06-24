@@ -66,7 +66,7 @@ This framework includes:
   A Markdown format for consistently documenting individual risks.
 
 - 📊 **Indicator Template**  
-  Defines how to link measurable metrics or behavioral signals to each risk.
+  Defines how to link more concrete and more measurable metrics or behavioral signals to each risk.
 
 - 🛠 **Measure Template**  
   Standardizes how mitigation strategies are described, evaluated, and linked to risks.
