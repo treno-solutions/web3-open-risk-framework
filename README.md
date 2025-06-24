@@ -72,7 +72,7 @@ This framework includes:
   Standardizes how mitigation strategies are described, evaluated, and linked to risks.
 
 - 🫆 **Risk Assessment Guide**  
-  Provides a model for rating severity, likelihood, and persistence – plus integration with indicators.
+  Provides a model for rating likelihood and financial impact (the two key axes for risk assessment and risk matrices), with optional support for persistence and integration with risk indicators.
 
 ---
 
