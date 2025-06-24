@@ -23,24 +23,24 @@ The other sections can then be filled in later, based on your priorities or reso
 ```yaml
 id: "R:RISK-TITLE"
 title: Example Risk Title
-category: CONTRACT             # One of the values from `categories.md`
-type: HYBRID                   # One of: QUANTITATIVE / QUALITATIVE / HYBRID
-scopes:                        # (optional)
-  - TRADE                      # One or more from `scopes.md`
+category: CONTRACT
+type: HYBRID
+scopes:
+  - TRADE
   - APPLICATION
-owners:                        # (optional)
-  - TEAM              # One or more from `owners.md`
-objectives:                    # (optional)
+owners:
+  - TEAM
+objectives:
   - type: VALUE
     direction: DECREASE
-    goal: INCREASE             # Desired direction (e.g., lower cost, higher yield)
+    goal: INCREASE
   - type: TRUST
     direction: DECREASE
     goal: INCREASE
-measures:                      # (optional)
+measures:
   - id: M:SUBSTITUTION
   - id: M:HEDGING
-indicatorWeights:              # (optional) Weighted influence of individual indicators on risk dimensions
+indicatorWeights:
   - id: "I:UTILIZATION_RATIO"
     weight: 0.6
     affects:
