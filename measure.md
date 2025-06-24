@@ -45,6 +45,7 @@ Example:
 Define the conditions under which this measure is applicable. This ensures the measure is only used where meaningful and technically feasible.
 
 Example:
+
 - Asset must be liquid and traded on at least two reputable exchanges
 - Suitable benchmark (e.g., ETH or a sector index) should be defined for relative comparisons
 
@@ -55,6 +56,7 @@ Example:
 Outline the steps or actions typically required to apply this measure. Helps with operational clarity, automation logic, or dashboard instructions.
 
 Example:
+
 - Monitor yield and risk metrics of all current positions
 - Compare with thresholds defined in strategy
 - Trigger capital rotation into safer or higher-quality alternatives
@@ -65,6 +67,7 @@ Example:
 ## 🎯 Risk Reduction Scope
 
 Define which dimensions of risk this measure addresses:
+
 - **Severity**: Can this reduce the impact if the risk materializes?
 - **Likelihood**: Can this make the risk less likely to occur?
 - **Persistence**: Can this shorten the duration of exposure?

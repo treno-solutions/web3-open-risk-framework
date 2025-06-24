@@ -5,8 +5,6 @@ The risk type determines how the risk can be assessed, monitored, or mitigated �
 
 Each risk in the catalog must declare exactly one type:
 
----
-
 ## `QUANTITATIVE` — Data-Driven & Measurable
 
 Risks that can be evaluated using numeric indicators, thresholds, or on-chain metrics.  
@@ -23,8 +21,6 @@ Quantitative risks can directly define numeric thresholds and trigger actions au
 - Can be linked to live data feeds  
 - Thresholds can trigger escalation or mitigation logic  
 - Numeric thresholds clearly defined (e.g., TVL below X triggers alert)
-
----
 
 ## `QUALITATIVE` — Structural & Behavioral
 
@@ -43,8 +39,6 @@ Qualitative risks must always be assessed in relation to other risks or situatio
 - Must be evaluated manually in comparative or relational contexts  
 - Suitable for onboarding, documentation, and due diligence  
 
----
-
 ## `HYBRID` — Mixed Evaluation
 
 Risks that have both measurable and structural components.  
@@ -61,8 +55,6 @@ They involve numeric indicators but cannot be fully reduced to quantitative metr
 - Can evolve from qualitative to quantitative as better data becomes available  
 - Often relevant for escalation thresholds with a fallback to manual review
 
----
-
 ## 📌 **Choosing the Correct Risk Type**
 
 Use this simple decision framework:
@@ -75,8 +67,6 @@ Use this simple decision framework:
 
 - **Qualitative**:  
   No meaningful numeric thresholds; assessment relies entirely on expert judgment and comparative evaluation.
-
----
 
 Each risk catalog entry must declare one of the three values above in the `RiskType` field.  
 This allows downstream systems (UIs, dashboards, governance platforms) to handle risks accordingly.

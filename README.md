@@ -10,6 +10,7 @@ Web3 has unlocked a new world of financial autonomy and innovation,
 but it also introduces complex, layered, and often opaque risks.
 
 We've seen:
+
 - Cross-chain bridges exploited.
 - Stablecoins losing their peg and triggering systemic effects.
 - Governance processes subject to manipulation.
@@ -21,6 +22,7 @@ This framework was developed to address a critical gap:
 the absence of structured, transparent methodologies for understanding risk in decentralized systems.  
 It aims to move beyond vague slogans like "do your own research" —  
 towards a framework that systematically answers:
+
 - What are the risks?
 - What can go wrong?
 - How can it occur?

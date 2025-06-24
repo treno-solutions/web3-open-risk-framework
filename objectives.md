@@ -12,8 +12,6 @@ A risk entry in the catalogue should specify:
 
 > Note: The model only tracks *undesirable deviations* from the expected or desired state.
 
----
-
 ## 📊 Purpose and Use
 
 The objectives model serves several key functions:
@@ -22,8 +20,6 @@ The objectives model serves several key functions:
 - It simplifies risk scoring through **thematic groupings** of objectives
 - It helps design targeted **measures** that address specific threats
 - It supports intuitive UI elements like filters, badges, or dashboards
-
----
 
 ## 🧩 Objective Domains and Definitions
 
@@ -37,8 +33,6 @@ Risks that directly affect the economic quality or efficiency of an investment.
 | `COST`      | Operational or transactional expenses. | ↓ Decrease | Gas fee spikes on Ethereum |
 | `LIQUIDITY` | Ability to exit or reallocate quickly. | ↑ Increase | Liquidity lock during volatility |
 
----
-
 ### 🛡 Security Objectives  
 Risks that affect safety, accessibility, or resilience.
 
@@ -50,8 +44,6 @@ Risks that affect safety, accessibility, or resilience.
 | `TRUST`      | Perceived system reliability. | ↑ Increase | Confusing or manipulated vote |
 | `POTENTIAL`  | Long-term upside and optionality. | ↑ Increase | No roadmap or stagnation |
 
----
-
 ### ⚖️ Regulatory Objectives  
 Risks that influence legal certainty or reputational standing.
 
@@ -59,8 +51,6 @@ Risks that influence legal certainty or reputational standing.
 |----------------|-------------|-----------|---------|
 | `LEGAL_STATUS` | Alignment with regulatory frameworks. | ↑ Increase | Protocol accidentally offers a security |
 | `TRANSPARENCY` | Clarity around governance or ownership. | ↑ Increase | Hidden roles in multisig |
-
----
 
 ## 🔁 Connection to Measures
 
@@ -75,8 +65,6 @@ This supports:
 - Actionable decision-making  
 - Scoring logic in automated tools  
 - Communication of mitigation effectiveness
-
----
 
 ## 📌 Implementation Tip
 

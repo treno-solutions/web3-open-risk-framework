@@ -1,4 +1,4 @@
-# 📊 Indicator: I:LENDING_APY_TREND
+# Lending APY Trend
 
 | Field             | Value                    |
 |------------------|--------------------------|
@@ -8,13 +8,9 @@
 | **Version**      | 1.0                      |
 | **Last Update**  | 2025-01-27               |
 
----
-
 ## 🧠 Description
 
 Tracks the change in annual percentage yield (APY) for a specific lending pool over time. A consistent downward trend may indicate decreasing protocol competitiveness, shrinking demand, or changes in risk-adjusted returns. This indicator helps identify when lending strategies become unsustainable or misaligned with investment objectives.
-
----
 
 ## 📋 Preconditions
 
@@ -22,8 +18,6 @@ Tracks the change in annual percentage yield (APY) for a specific lending pool o
 - Consistent data source (e.g. Aave, Compound, Spark subgraph)  
 - Preferably net APY after fees and incentives
 - Pool must have sufficient liquidity and trading volume
-
----
 
 ## ⚙️ Methodology
 
@@ -34,8 +28,6 @@ Tracks the change in annual percentage yield (APY) for a specific lending pool o
 - **Normalization:** Adjust for changes in incentives or liquidity depth to isolate genuine rate trends
 - **Benchmarking:** Compare against sector averages or similar protocols
 
----
-
 ## ⚠️ Limitations
 
 - **Noise Sensitivity:** APYs can be highly volatile short-term; smoothing must be applied carefully
@@ -43,8 +35,6 @@ Tracks the change in annual percentage yield (APY) for a specific lending pool o
 - **Liquidity Effects:** Shifts in liquidity or utilization rate can affect APY independently of protocol quality
 - **Benchmarking:** Hard to compare across protocols without normalizing for risk and incentive structure
 - **Time Lag:** Historical data may not reflect current market conditions
-
----
 
 ## 📊 Assessment
 
@@ -62,8 +52,6 @@ If APY drops from 4.0% to 2.0% over 90 days, this represents a 50% decrease:
 | Low (2)        | APY down 10–20% (90d)              | Mild but persistent reduction in returns                  |
 | Very Low (1)   | APY down < 10% (90d)               | Stable or minimally declining trend                       |
 
----
-
 ## ⚙️ Standard Configurations
 
 | Profile       | 5 – Very High | 4 – High | 3 – Medium | 2 – Low | 1 – Very Low |
@@ -71,8 +59,6 @@ If APY drops from 4.0% to 2.0% over 90 days, this represents a 50% decrease:
 | Conservative  | >50%          | 40–50%   | 30–40%     | 20–30%  | <20%         |
 | Moderate      | >60%          | 50–60%   | 35–50%     | 25–35%  | <25%         |
 | Aggressive    | >70%          | 60–70%   | 40–60%     | 30–40%  | <30%         |
-
----
 
 ## 🧭 Usage Guidance
 
@@ -83,8 +69,6 @@ This indicator is especially useful for:
 - Informing asset reallocation or early withdrawal decisions  
 - Comparing yield trends across protocols to evaluate performance
 - Monitoring protocol health and market dynamics
-
----
 
 ## 🧱 Related Risks
 

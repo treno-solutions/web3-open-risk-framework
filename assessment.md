@@ -4,8 +4,6 @@ This document defines how to perform consistent, transparent, and meaningful **r
 
 The goal is to provide a structured methodology that supports both **qualitative interpretation** and **quantitative evaluation**, depending on the risk type.
 
----
-
 ## 🌟 Purpose
 
 The assessment process helps answer:
@@ -20,8 +18,6 @@ Assessments are critical for:
 - Prioritization in dashboards or reports  
 - Triggering mitigations or alerts  
 - Communicating urgency and confidence  
-
----
 
 ## ⚙️ Assessment Parameters
 
@@ -43,8 +39,6 @@ Example (3-point scale):
 | 2     | Moderate   | Possible   | Recurring   |
 | 3     | Critical   | Likely     | Persistent  |
 
----
-
 ## 🧾 Accepted Values
 
 Each field in a risk assessment uses a predefined set of values (enums) to ensure consistency across dashboards, reports, and automated systems. These values are **not defined globally**, but directly in the documents that introduce and explain them in context.
@@ -57,8 +51,6 @@ For reference:
 
 Each of these enums should be treated as normative and stable. When updating or interpreting a risk or a measure, always refer to the original definition in the respective file.
 
----
-
 ## 🔁 Indicator Integration
 
 If the risk is **quantitative** or **hybrid**, link relevant indicators:
@@ -67,8 +59,6 @@ If the risk is **quantitative** or **hybrid**, link relevant indicators:
 - Use threshold logic (e.g., 7-day moving average crosses critical value)
 - Highlight **deviation from baseline or target**, not just absolute values
 
----
-
 ## 🧠 Qualitative Judgement
 
 For qualitative risks:
@@ -76,8 +66,6 @@ For qualitative risks:
 - Use a **structured checklist** or comparative case review
 - Reference similar risks with known impact
 - Involve subject matter experts in protocol governance, security, legal, etc.
-
----
 
 ## 🗂️ Example Output
 
@@ -103,8 +91,6 @@ assessment:
     Yield erosion is already observable. However, user migration is still low,
     indicating early-stage manifestation. Risk is structural and recurring.
 ```
-
----
 
 ## 📌 Usage Tips
 

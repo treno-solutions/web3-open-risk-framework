@@ -2,8 +2,6 @@
 
 This document outlines the conceptual and methodological foundations of the **Web3 Open Risk Framework**, including influences from established risk standards and the rationale behind key design decisions.
 
----
-
 ## 📘 Methodological Inspirations
 
 While Web3 presents new challenges, this framework draws on well-established risk management standards to ensure analytical rigor and compatibility with institutional thinking.
@@ -22,8 +20,6 @@ While Web3 presents new challenges, this framework draws on well-established ris
 - Influence on **quantitative assessment principles** (severity, likelihood, scenario-based evaluation)
 - Separation of **technical risk modeling** from **operational/strategic risk**
 
----
-
 ## 🔬 Key Design Principles
 
 The Web3 Open Risk Framework was developed with a set of explicit design priorities:
@@ -36,8 +32,6 @@ The Web3 Open Risk Framework was developed with a set of explicit design priorit
 | **Actionability by Design** | Every risk entry must identify **who can act** and **how** (via measures). This prevents dead-end analyses and enables response modeling. |
 | **Composable Architecture** | The framework is modular: each file (e.g., categories, scopes, owners) is designed for reuse and extension. |
 | **Neutrality** | The framework is **non-opinionated** about the use of crypto. It does not promote or discourage participation – it enables **informed risk decisions**. |
-
----
 
 ## 🆚 Comparison with Existing Web3 Tools
 

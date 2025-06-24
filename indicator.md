@@ -69,6 +69,7 @@ Example:
 Specify the conditions that must be met for this indicator to be meaningful or applicable.
 
 Example:
+
 - Minimum of 30 days of price data required
 - Asset must be liquid and traded on at least two reputable exchanges
 - Suitable benchmark (e.g., ETH or a sector index) should be defined for relative comparisons
@@ -80,15 +81,17 @@ Example:
 Describe the step-by-step process for calculating the indicator. This section ensures reproducibility and transparency.
 
 Example structure:
+
 - Data Source: Pull historical price data from on-chain oracles or off-chain APIs (e.g., CoinGecko, Chainlink).
 - Cleaning: Handle missing values, outliers, and ensure consistent time intervals.
 - Return Calculation: Compute daily log returns from closing prices.
 - Volatility Calculation: Calculate the standard deviation of returns.
 - Annualization: Multiply by √252 to annualize daily volatility.
 - Rolling Window: Apply a 30-day rolling average to smooth the signal.
-- Benchmarking: Compare the asset’s volatility to ETH or BTC as baseline.
+- Benchmarking: Compare the asset's volatility to ETH or BTC as baseline.
 
 Optional additions:
+
 - Clustering: Identify volatility regimes (low vs. high) with thresholds.
 - Charting: Include historical volatility chart for visual representation.
 
@@ -99,6 +102,7 @@ Optional additions:
 Describe key limitations and potential weaknesses of the indicator.
 
 Structure:
+
 - Data Quality: Susceptible to bad price feeds or oracle manipulation.
 - Time Sensitivity: Lagging indicator; reacts to past events.
 - Assumptions: Normal distribution of returns may not hold.
@@ -124,7 +128,7 @@ Define how the indicator translates into a risk level using thresholds. Include 
 
 ## ⚙️ Standard Configurations (optional)
 
-These values define what each investor profile considers “acceptable” or “concerning” based on their risk appetite.
+These values define what each investor profile considers "acceptable" or "concerning" based on their risk appetite.
 
 | **Profile**   | **Very High** | **High**  | **Medium** | **Low**   | **Very Low** |
 |---------------|---------------|-----------|------------|-----------|--------------|

@@ -11,6 +11,7 @@ This system allows for targeted monitoring, guidance, and alerting – without o
 ## 🧭 Why Use Scopes?
 
 Not every risk is always relevant. This framework allows you to:
+
 - Attach contextual tags to risks based on **when they become visible or active**
 - Trigger indicators, warnings, or guidance during **specific actions**
 - Provide developers and users with **context-aware risk insights**
@@ -58,6 +59,7 @@ Each risk can be tagged with one or more of the following scopes:
 ---
 
 This model is especially useful in:
+
 - Dynamic UIs with risk overlays or progressive disclosure  
 - Decision engines filtering risks in context  
 - Educational journeys for new users  

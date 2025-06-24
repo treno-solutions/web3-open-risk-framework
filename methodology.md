@@ -8,6 +8,7 @@ While we do not claim formal compliance, we intentionally incorporate key princi
 ## ✅ Why this matters
 
 Risk management in Web3 must balance two needs:
+
 - **Structure** – to enable comparability, ownership, and actionability
 - **Flexibility** – to reflect the dynamic, modular, and permissionless nature of the ecosystem
 
@@ -54,11 +55,13 @@ By referencing well-known standards, we aim to bridge traditional expectations w
 ## 🧭 Notes on Adaptation
 
 While these standards are rooted in corporate or regulatory environments, we adapt them for:
+
 - **Transparency over bureaucracy**
 - **Decentralized ownership over hierarchical accountability**
 - **Observability and composability over static compliance reports**
 
 Our framework is designed to be:
+
 - Actionable for developers and investors
 - Verifiable for analysts and dashboards
 - Extendable for DAOs, funds, and protocol teams

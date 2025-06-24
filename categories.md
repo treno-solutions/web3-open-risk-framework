@@ -3,10 +3,10 @@
 This file defines the eight core risk categories used throughout the Web3 Open Risk Framework.  
 Each risk must be assigned exactly one category. The goal is to maintain clarity, comparability, and structural consistency across all risk entries.
 
----
 
-## I. `FINANCIAL` — Market & Financial
+## I. Market & Financial
 
+```FINANCIAL```
 Risks related to price movements, volatility, liquidity shortages, stablecoin depegging, or yield erosion.
 
 **Examples:**
@@ -18,10 +18,10 @@ Risks related to price movements, volatility, liquidity shortages, stablecoin de
 - Devaluation of collateral asset in overcollateralized loans
 - Unsustainable high APY due to reward farming dilution
 
----
 
-## II. `DEPENDENCY` — Intermediary & Dependency
+## II. Intermediary & Dependency
 
+```DEPENDENCY```
 Risks caused by reliance on third-party services or infrastructures such as bridges, oracles, custodians, or RPC providers.
 
 **Examples:**
@@ -33,10 +33,10 @@ Risks caused by reliance on third-party services or infrastructures such as brid
 - Custodian breach exposing institutional wallet assets
 - Centralized stablecoin blacklist rendering user funds inaccessible
 
----
 
-## III. `TECHNICAL` — Blockchain & Network
+## III. Blockchain & Network
 
+```TECHNICAL```
 Risks originating from the underlying base layer or consensus mechanism, including validator behavior or network instability.
 
 **Examples:**
@@ -48,10 +48,10 @@ Risks originating from the underlying base layer or consensus mechanism, includi
 - Cross-chain messaging protocol vulnerability
 - Hard fork incompatibility causing client desynchronization
 
----
 
-## IV. `APPLICATION` — Application & Interface
+## IV. Application & Interface
 
+```APPLICATION```
 Risks introduced by the user-facing application layer including wallets, frontends, or browser extensions.
 
 **Examples:**
@@ -63,10 +63,10 @@ Risks introduced by the user-facing application layer including wallets, fronten
 - Localization bugs leading to misinterpretation in other languages
 - Mobile wallet update breaking compatibility with older dApps
 
----
 
-## V. `ORGANIZATIONAL` — Organizational & Governance
+## V. Organizational & Governance
 
+```ORGANIZATIONAL```
 Risks tied to team structure, DAO operations, unclear responsibilities, governance dysfunction, or process failures.
 
 **Examples:**
@@ -78,10 +78,10 @@ Risks tied to team structure, DAO operations, unclear responsibilities, governan
 - Legal entity behind the DAO being dissolved without process
 - Misalignment between token holders and core team incentives
 
----
 
-## VI. `CONTRACT` — Smart Contract Logic
+## VI. Smart Contract Logic
 
+```CONTRACT```
 Risks inherent in smart contract code or upgrade mechanisms, including logic flaws, proxy patterns, or admin controls.
 
 **Examples:**
@@ -93,10 +93,10 @@ Risks inherent in smart contract code or upgrade mechanisms, including logic fla
 - Unchecked external call enabling DoS vector
 - Misconfigured time-lock leading to upgrade without delay
 
----
 
-## VII. `HUMAN_ERROR` — User Handling & Behavior
+## VII. User Handling & Behavior
 
+```HUMAN_ERROR```
 Risks resulting from user mistakes or misbehavior, including key loss, phishing, insecure environments, or operational errors.
 
 **Examples:**
@@ -108,10 +108,10 @@ Risks resulting from user mistakes or misbehavior, including key loss, phishing,
 - Approving unlimited token spend for a malicious contract
 - Failing to revoke access after using DeFi protocol
 
----
 
-## VIII. `COMPLIANCE` — Compliance & Legal
+## VIII. Compliance & Legal
 
+```COMPLIANCE```
 Risks related to legal uncertainty, regulatory enforcement, KYC/AML exposure, sanctions, or DAO liability.
 
 **Examples:**

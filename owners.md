@@ -4,9 +4,34 @@ Understanding who is responsible for a given risk is essential for evaluating it
 
 This file defines a layered **Risk Owner Model** – a set of clearly scoped roles that map responsibility across the crypto ecosystem. Each role is exclusive and collectively they cover the full surface of possible control, oversight, or action.
 
----
+## 🧩 Usage in the Risk Catalogue
 
-## 🧍 INVESTOR
+Each risk is assigned one or more **Risk Owners** to clarify accountability. This field answers:
+
+> Who can take action to prevent, mitigate, or respond to this risk?
+
+Use this to inform:
+
+- Mitigation strategies  
+- Ownership gaps  
+- Governance decisions  
+- Monitoring responsibilities
+
+## 🎯 Summary Table
+
+| Enum Value                  | Scope of Responsibility                         | Power to Act | Example Entities                     |
+|-----------------------------|--------------------------------------------------|--------------|--------------------------------------|
+| `INVESTOR`                  | Holds the capital and bears the loss            | Indirect     | Retail users, fund managers          |
+| `PLATFORM_OPERATOR`         | Surfaces and explains risks                     | Indirect     | Treno, TokenLogic, RiskDAO           |
+| `PROTOCOL_TEAM`             | Develops and maintains the application logic    | Direct       | Aave team, Compound Labs, Lido DAO   |
+| `BASE_INFRASTRUCTURE`       | Maintains base blockchain network               | Direct       | Ethereum Foundation, Solana Labs     |
+| `DEPENDENCY_PROVIDER`       | Provides external services to protocols         | Partial      | Chainlink, LayerZero, Fireblocks     |
+| `GOVERNANCE_PARTICIPANT`    | Votes on key decisions                          | Indirect     | Token holders, DAO delegates         |
+| `STAKING_OPERATOR`          | Runs infrastructure and secures the network     | Direct       | Solo validators, Lido node operators |
+| `AUDITOR_OR_SECURITY_REVIEWER` | Reviews code and flags risk                   | Advisory     | Trail of Bits, CertiK, Code4rena     |
+
+
+## 🧍 `INVESTOR`
 
 **Scope:**  
 The individual or entity holding the asset or financial position.
@@ -20,9 +45,7 @@ Investors cannot directly fix most risks, but they are the ones affected. Their 
 - Participating in DAO votes  
 - Choosing alternative products
 
----
-
-## 🛰 PLATFORM_OPERATOR
+## 🛰 `PLATFORM_OPERATOR`
 
 **Scope:**  
 Risk monitoring platforms and analytics services (e.g. Treno, TokenLogic).
@@ -36,9 +59,7 @@ Not directly responsible for the risk itself, but they provide the **visibility*
 - Surfacing new or emerging risks  
 - Informing investors and teams
 
----
-
-## 🏗 PROTOCOL_TEAM
+## 🏗 `PROTOCOL_TEAM`
 
 **Scope:**  
 The team, foundation, or DAO that designs and maintains the application logic.
@@ -52,9 +73,7 @@ They have the most direct power to fix problems, deploy changes, or modify risk-
 - Incident response  
 - Public communication
 
----
-
-## ⚙️ BASE_INFRASTRUCTURE
+## ⚙️ `BASE_INFRASTRUCTURE`
 
 **Scope:**  
 Layer 1 or Layer 2 networks (e.g. Ethereum, Arbitrum).
@@ -68,9 +87,7 @@ They secure the base layer, define consensus, and affect every application built
 - Infrastructure-level mitigations  
 - Chain-wide coordination
 
----
-
-## 🔗 DEPENDENCY_PROVIDER
+## 🔗 `DEPENDENCY_PROVIDER`
 
 **Scope:**  
 External services that protocols rely on but do not control.
@@ -87,9 +104,7 @@ They are not part of the protocol but their performance directly affects it.
 - Publishing documentation or fixes  
 - Handling security incidents
 
----
-
-## 🧑‍⚖️ GOVERNANCE_PARTICIPANT
+## 🧑‍⚖️ `GOVERNANCE_PARTICIPANT`
 
 **Scope:**  
 Token holders or delegates who vote in governance processes.
@@ -103,9 +118,7 @@ They can influence protocol direction but are not implementers.
 - Raising concerns  
 - Proposing new ideas
 
----
-
-## 🧱 STAKING_OPERATOR
+## 🧱 `STAKING_OPERATOR`
 
 **Scope:**  
 Validators, sequencers, or block producers who secure the network.
@@ -119,9 +132,7 @@ They ensure uptime, liveness, and economic finality.
 - Avoiding slashing conditions  
 - Supporting protocol security
 
----
-
-## 🧪 AUDITOR_OR_SECURITY_REVIEWER
+## 🧪 `AUDITOR_OR_SECURITY_REVIEWER`
 
 **Scope:**  
 External security professionals or firms conducting formal reviews.
@@ -135,32 +146,3 @@ Not accountable for what happens on-chain, but gatekeepers of risk before deploy
 - Reviewing upgrade proposals  
 - Recommending mitigations
 
----
-
-## 🧩 Usage in the Risk Catalogue
-
-Each risk is assigned one or more **Risk Owners** to clarify accountability. This field answers:
-
-> Who can take action to prevent, mitigate, or respond to this risk?
-
-Use this to inform:
-
-- Mitigation strategies  
-- Ownership gaps  
-- Governance decisions  
-- Monitoring responsibilities
-
----
-
-## 🎯 Summary Table
-
-| Enum Value                  | Scope of Responsibility                         | Power to Act | Example Entities                     |
-|-----------------------------|--------------------------------------------------|--------------|--------------------------------------|
-| `INVESTOR`                  | Holds the capital and bears the loss            | Indirect     | Retail users, fund managers          |
-| `PLATFORM_OPERATOR`         | Surfaces and explains risks                     | Indirect     | Treno, TokenLogic, RiskDAO           |
-| `PROTOCOL_TEAM`             | Develops and maintains the application logic    | Direct       | Aave team, Compound Labs, Lido DAO   |
-| `BASE_INFRASTRUCTURE`       | Maintains base blockchain network               | Direct       | Ethereum Foundation, Solana Labs     |
-| `DEPENDENCY_PROVIDER`       | Provides external services to protocols         | Partial      | Chainlink, LayerZero, Fireblocks     |
-| `GOVERNANCE_PARTICIPANT`    | Votes on key decisions                          | Indirect     | Token holders, DAO delegates         |
-| `STAKING_OPERATOR`          | Runs infrastructure and secures the network     | Direct       | Solo validators, Lido node operators |
-| `AUDITOR_OR_SECURITY_REVIEWER` | Reviews code and flags risk                   | Advisory     | Trail of Bits, CertiK, Code4rena     |
