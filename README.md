@@ -9,7 +9,7 @@ An open-source structure for mapping and understanding crypto-native risks – f
 Web3 has unlocked a new world of financial autonomy and innovation,  
 but it also introduces complex, layered, and often opaque risks.
 
-We’ve seen:
+We've seen:
 - Cross-chain bridges exploited.
 - Stablecoins losing their peg and triggering systemic effects.
 - Governance processes subject to manipulation.
@@ -19,28 +19,31 @@ Despite this, most tools still reduce risk to a simplistic score, a badge, or a 
 
 This framework was developed to address a critical gap:  
 the absence of structured, transparent methodologies for understanding risk in decentralized systems.  
-It aims to move beyond vague slogans like “do your own research” —  
+It aims to move beyond vague slogans like "do your own research" —  
 towards a framework that systematically answers:
-- **What can go wrong?**  
-- **Where does it occur?**  
-- **Who is responsible?**  
-- **What are the potential consequences?**
+- What are the risks?
+- What can go wrong?
+- How can it occur?
+- Where does it occur?
+- Who is responsible?
+- What are the potential consequences?
+- What are the potential measures? *(Note: Not all mitigation details are published for security reasons.)*
 
 We originally built this to support our own risk analysis.  
-Now we’re sharing it — for those who want to approach risk with clarity, consistency, and accountability.
+Now we're sharing it — for those who want to approach risk with clarity, consistency, and accountability.
 
 ---
 
 ## 🧭 Purpose
 
-This is not a risk catalog – it’s the foundation to build your own. Use it to think in layers, assign responsibility, and connect risks to action.
+This is not a risk catalog – it's the foundation to build your own. Use it to think in layers, assign responsibility, and connect risks to action.
 It helps teams and individuals understand Web3 risks in a structured, reusable, and transparent way – without relying on hype or opaque scoring models.
 
 👉 We also explore many of these risks in practice on our [Treno.Finance Blog](https://treno.finance), where we regularly analyze DeFi mechanisms, failure cases, and risk patterns.
 
 ---
 
-## 🧱 What’s Included
+## 🧱 What's Included
 
 This framework includes:
 
