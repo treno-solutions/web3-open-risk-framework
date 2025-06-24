@@ -88,9 +88,9 @@ This repository is organized by function. Each file defines a reusable part of t
 | [`objectives.md`](./objectives.md)        | Maps risks to **investment objectives** like value, yield, or trust     |
 | [`owners.md`](./owners.md)                | Defines a layered model of **Risk Owners** and their capabilities       |
 | [`risk.md`](./risk.md)                    | A complete Markdown **template** to document an individual risk         |
-| [`indicator.md`](./indicator.md)          | Describes how to define **signals** and **metrics** that track a risk   |
+| [`indicator.md`](./indicator.md)          | Describes how to define more concrete and more **measurable metrics** or **behavioral signals** for each risk |
 | [`measure.md`](./measure.md)              | Describes how to define a **measure** to mitigate a risk                |
-| [`assessment.md`](./assessment.md)        | Outlines how to assess risks using structured methods — either qualitatively or supported by quantitative indicators |
+| [`assessment.md`](./assessment.md)        | Outlines how to assess risks using methods (either qualitatively or supported by quantitative indicators) and using Likelihood and Financial Impact |
 | [`philosophy.md`](./philosophy.md)        | Describes the **methodology**, **principles**, and external **influences** behind this framework |
 | [`terminology.md`](./terminology.md)      | Defines key terms and concepts used throughout the framework for consistent understanding and usage |
 
