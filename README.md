@@ -60,7 +60,7 @@ This framework includes:
   A tagging system to express how a risk affects value, yield, liquidity, or trust.
 
 - 🛡 **Risk Owner Model**  
-  A layered model to determine who can act or intervene.
+  A layered model to determine who is responsible and can act or intervene for a certain risk.
 
 - 🧾 **Risk Template**  
   A Markdown format for consistently documenting individual risks.
