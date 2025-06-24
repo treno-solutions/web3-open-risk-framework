@@ -27,7 +27,6 @@ Use this to inform:
 | `BASE`       | Maintains base blockchain network               | Direct       | Ethereum Foundation, Solana Labs     |
 | `PROVIDER`       | Provides external services to protocols         | Partial      | Chainlink, LayerZero, Fireblocks     |
 | `PARTICIPANT`    | Votes on key decisions                          | Indirect     | Token holders, DAO delegates         |
-| `STAKING_OPERATOR`          | Runs infrastructure and secures the network     | Direct       | Solo validators, Lido node operators |
 | `REVIEWER` | Reviews code and flags risk                   | Advisory     | Trail of Bits, CertiK, Code4rena     |
 
 
@@ -117,20 +116,6 @@ They can influence protocol direction but are not implementers.
 - Delegating power  
 - Raising concerns  
 - Proposing new ideas
-
-## 🧱 `STAKING_OPERATOR`
-
-**Scope:**  
-Validators, sequencers, or block producers who secure the network.
-
-**Responsibility:**  
-They ensure uptime, liveness, and economic finality.
-
-**Typical actions:**  
-- Running reliable infrastructure  
-- Participating in consensus  
-- Avoiding slashing conditions  
-- Supporting protocol security
 
 ## 🧪 `REVIEWER`
 
