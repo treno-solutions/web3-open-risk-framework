@@ -2,8 +2,6 @@
 
 This document defines the standard structure and purpose of each section used when creating a new risk mitigation measure in the Web3 Open Risk Framework. Measures represent actionable strategies to reduce the severity, likelihood, or persistence of a risk.
 
----
-
 ## 🧾 Header Metadata
 
 Basic identifier and classification details.
@@ -22,23 +20,19 @@ Type: Measure
 Title: Asset Substitution
 Last Update: 2025-06-04
 Version: 1.1
-ImpactPotential: High         # One of: Low, Medium, High
+ImpactPotential: High
 RiskReductionScope:
   Severity: true
   Likelihood: true
   Persistence: false
 ```
 
----
-
 ## 🧠 Description
 
 Describe what the measure is and how it helps reduce risk. Clarify the mechanism of action, intended outcome, and what type of risk it targets.
 
-Example:
-> Replaces highly volatile or correlated assets with safer alternatives to reduce portfolio-level exposure. Used when market instability threatens yield or value preservation.
-
----
+**Example:**
+Replaces highly volatile or correlated assets with safer alternatives to reduce portfolio-level exposure. Used when market instability threatens yield or value preservation.
 
 ## 📋 Preconditions
 
@@ -48,8 +42,6 @@ Example:
 
 - Asset must be liquid and traded on at least two reputable exchanges
 - Suitable benchmark (e.g., ETH or a sector index) should be defined for relative comparisons
-
----
 
 ## ⚙️ Implementation
 
@@ -61,8 +53,6 @@ Example:
 - Compare with thresholds defined in strategy
 - Trigger capital rotation into safer or higher-quality alternatives
 - Confirm execution and update exposure logs
-
----
 
 ## 🎯 Risk Reduction Scope
 
@@ -78,8 +68,6 @@ Define which dimensions of risk this measure addresses:
 | Likelihood  | ✅          | Reduces exposure to risky positions |
 | Persistence | ❌          | Does not affect duration of risk    |
 
----
-
 ## 🪜 Difficulty
 
 Assess the level of effort, knowledge, and infrastructure required to implement this measure.
@@ -88,8 +76,6 @@ Assess the level of effort, knowledge, and infrastructure required to implement 
 - **Medium**: Requires moderate understanding or tooling (e.g., dashboards, yield monitors)
 - **Hard**: Requires advanced modeling, automation, or multi-platform interaction
 
----
-
 ## 📈 Impact Potential
 
 How effective is this measure in reducing the targeted risk?
@@ -97,8 +83,6 @@ How effective is this measure in reducing the targeted risk?
 - **Low**: Marginal effect; acts as signal or soft brake
 - **Medium**: Helps realign exposure; meaningful risk improvement
 - **High**: Strong protection; structural mitigation
-
----
 
 ## 🧭 Usage Guidance
 

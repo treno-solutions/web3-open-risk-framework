@@ -59,8 +59,8 @@ profiles:
 
 Explain what the indicator measures and why it is relevant. Clarify the risk dimension it addresses (e.g., market fluctuations, protocol instability, behavioral signals) and how it contributes to identifying or tracking a specific risk condition.
 
-Example:
-> Measures the degree of price fluctuations over time. High volatility is often correlated with uncertainty, low liquidity, or manipulation. Useful for identifying unstable asset behavior or risk exposure in trading.
+**Example:**
+Measures the degree of price fluctuations over time. High volatility is often correlated with uncertainty, low liquidity, or manipulation. Useful for identifying unstable asset behavior or risk exposure in trading.
 
 ---
 
