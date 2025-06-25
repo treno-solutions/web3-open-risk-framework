@@ -2,43 +2,6 @@
 
 A comprehensive, open-source framework for Web3 risk assessment and management.
 
-## Overview
-
-The Web3 Open Risk Framework provides a structured methodology for identifying, analyzing, and mitigating risks in decentralized systems. This framework serves as the foundation for various implementations and can be adapted to different use cases and requirements.
-
-This is not a risk catalog – it's the foundation to build your own. Use it to think in layers, assign responsibility, and connect risks to action. It helps teams and individuals understand Web3 risks in a structured, reusable, and transparent way without relying on hype or opaque scoring models.
-
-## Features
-
-- **Comprehensive Methodology**: Complete risk assessment approach
-- **Standardized Templates**: Consistent structure for risks, indicators, and assessments
-- **JSON Schemas**: Validation rules for data integrity
-- **Professional Documentation**: Detailed guides and examples
-- **Open Source**: Creative Commons Attribution 4.0 International License
-
-## Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
-## Code of Conduct
-
-This project adheres to a [Code of Conduct](CODE_OF_CONDUCT.md). Please read it before contributing.
-
-## License
-
-This framework is licensed under the Creative Commons Attribution 4.0 International License.
-
-## Contact
-
-For questions about the framework:
-
-- **GitHub Issues:** Use the Issues page for technical discussions
-- **Email:** info@treno.solutions (for general inquiries)
-
-## Acknowledgments
-
-Thank you to all contributors who help improve the Web3 Open Risk Framework and make it accessible to the broader community!
-
 ---
 
 ## 🔍 Why We Built This
@@ -132,3 +95,12 @@ Each component is designed to be forked, extended, or integrated into your own c
 - Research and education  
 - Internal risk dashboards and tooling  
 - Strategy development for allocators and asset managers
+
+---
+
+## Contact
+
+For questions about the framework:
+
+- **GitHub Issues:** Use the Issues page for technical discussions
+- **Email:** info@treno.solutions (for general inquiries)
