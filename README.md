@@ -1,10 +1,12 @@
-# 🗻Web3 Open Risk Framework
+# 🗻 Web3 Open Risk Framework
 
 A comprehensive, open-source framework for Web3 risk assessment and management.
 
 ## Overview
 
 The Web3 Open Risk Framework provides a structured methodology for identifying, analyzing, and mitigating risks in decentralized systems. This framework serves as the foundation for various implementations and can be adapted to different use cases and requirements.
+
+This is not a risk catalog – it's the foundation to build your own. Use it to think in layers, assign responsibility, and connect risks to action. It helps teams and individuals understand Web3 risks in a structured, reusable, and transparent way without relying on hype or opaque scoring models.
 
 ## Features
 
@@ -14,52 +16,9 @@ The Web3 Open Risk Framework provides a structured methodology for identifying, 
 - **Professional Documentation**: Detailed guides and examples
 - **Open Source**: Creative Commons Attribution 4.0 International License
 
-## Quick Start
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/treno-solutions/web3-open-risk-framework.git
-   cd web3-open-risk-framework
-   ```
-
-2. Generate PDF documentation:
-   ```bash
-   cd book
-   ./make-book.sh
-   ```
-
-### Usage
-
-The framework provides:
-
-- **Templates** for creating risk entries
-- **Schemas** for validation
-- **Methodology** for assessment procedures
-- **Documentation** for implementation guidance
-
-## Documentation
-
-- [Philosophy](philosophy.md) - Core principles and approach
-- [Methodology](methodology.md) - Assessment procedures
-- [Categories](categories.md) - Risk categorization
-- [Types](types.md) - Risk types and classifications
-- [Scopes](scopes.md) - Assessment scopes
-- [Objectives](objectives.md) - Investment objectives
-- [Owners](owners.md) - Risk ownership
-- [Terminology](terminology.md) - Glossary of terms
-
 ## Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
-### Quick Start for Contributors
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
 
 ## Code of Conduct
 
@@ -68,13 +27,6 @@ This project adheres to a [Code of Conduct](CODE_OF_CONDUCT.md). Please read it 
 ## License
 
 This framework is licensed under the Creative Commons Attribution 4.0 International License.
-
-## Implementations
-
-This framework serves as the foundation for various implementations:
-
-- **[Web3 Open Risk Catalogue](https://github.com/treno-solutions/risk-catalogue)** - Comprehensive risk catalogue by Treno Solutions GmbH
-- *Your implementation here* - Add your implementation to this list
 
 ## Contact
 
@@ -91,22 +43,17 @@ Thank you to all contributors who help improve the Web3 Open Risk Framework and 
 
 ## 🔍 Why We Built This
 
-Web3 has unlocked a new world of financial autonomy and innovation,  
-but it also introduces complex, layered, and often opaque risks.
+Web3 has unlocked a new world of financial autonomy and innovation, but it also introduces complex, layered, and often opaque risks.
 
 We've seen:
-
-- Cross-chain bridges exploited.
-- Stablecoins losing their peg and triggering systemic effects.
-- Governance processes subject to manipulation.
-- Users signing opaque transactions without proper validation.
+- Cross-chain bridges exploited
+- Stablecoins losing their peg and triggering systemic effects
+- Governance processes subject to manipulation
+- Users signing opaque transactions without proper validation
 
 Despite this, most tools still reduce risk to a simplistic score, a badge, or a compliance checkbox.
 
-This framework was developed to address a critical gap:  
-the absence of structured, transparent methodologies for understanding risk in decentralized systems.  
-It aims to move beyond vague slogans like "do your own research" —  
-towards a framework that systematically answers:
+This framework was developed to address a critical gap: the absence of structured, transparent methodologies for understanding risk in decentralized systems. It aims to move beyond vague slogans like "do your own research" towards a framework that systematically answers:
 
 - What are the risks?
 - What can go wrong?
@@ -116,15 +63,7 @@ towards a framework that systematically answers:
 - What are the potential consequences?
 - What are the potential measures? *(Note: Not all mitigation details are published for security reasons.)*
 
-We originally built this to support our own risk analysis.  
-Now we're sharing it — for those who want to approach risk with clarity, consistency, and accountability.
-
----
-
-## 🧭 Purpose
-
-This is not a risk catalog – it's the foundation to build your own. Use it to think in layers, assign responsibility, and connect risks to action.
-It helps teams and individuals understand Web3 risks in a structured, reusable, and transparent way – without relying on hype or opaque scoring models.
+We originally built this to support our own risk analysis. Now we're sharing it — for those who want to approach risk with clarity, consistency, and accountability.
 
 👉 We also explore many of these risks in practice on our [Treno.Finance Blog](https://treno.finance), where we regularly analyze DeFi mechanisms, failure cases, and risk patterns.
 
@@ -181,7 +120,6 @@ This repository is organized by function. Each file defines a reusable part of t
 | [`philosophy.md`](./philosophy.md)        | Describes the **methodology**, **principles**, and external **influences** behind this framework |
 | [`terminology.md`](./terminology.md)      | Defines key terms and concepts used throughout the framework for consistent understanding and usage |
 
-
 Each component is designed to be forked, extended, or integrated into your own catalog or application.
 
 ---
@@ -194,50 +132,3 @@ Each component is designed to be forked, extended, or integrated into your own c
 - Research and education  
 - Internal risk dashboards and tooling  
 - Strategy development for allocators and asset managers
-
----
-
-## 🧑‍💻 Who Should Use This
-
-Whether you're:
-
-- Building an analytics platform  
-- Designing a safer protocol  
-- Managing capital in Web3  
-- Or trying to understand where the real risks lie
-
-This repository offers a pragmatic, extensible foundation for structured risk reasoning.
-
-> **Disclaimer:** This repository contains the _framework_ only. A full risk catalog, indicator data, or live dashboards are **not** included.
-
----
-
-## 💡 How to Use
-
-Fork, clone, or integrate this framework into your stack.  
-Document risks, assign owners, track indicators, and communicate more clearly what matters.
-
-You can adapt the templates to suit your internal structure or application design – or contribute back.
-
-**Quick Start:**
-Not all template sections are mandatory.
-Start simple by filling out only the essential fields (id, title, category, type, and description) for a rapid initial assessment. Expand to a detailed analysis later by completing the optional sections.
-
-See [`risk.md`](./risk.md) for details on required and optional fields.
-
----
-
-## 📄 License
-
-This framework is shared under a permissive non-commercial license.
-
-This work is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)** license.  
-You may use, adapt, and build on this material **for non-commercial purposes**, with proper attribution.  
-See [`LICENSE.md`](./LICENSE.md) for full terms.
-
----
-
-## 🚧 Project Status
-
-This is an evolving framework. It reflects ongoing research, protocol analysis, and real-world usage.  
-Feedback, contributions, and extensions are welcome via GitHub Issues or Pull Requests.
