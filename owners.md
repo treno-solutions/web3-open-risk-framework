@@ -22,7 +22,7 @@ Use this to inform:
 | Enum Value                  | Scope of Responsibility                         | Power to Act | Example Entities                     |
 |-----------------------------|--------------------------------------------------|--------------|--------------------------------------|
 | `INVESTOR`                  | Holds the capital and bears the loss            | Indirect     | Retail users, fund managers          |
-| `OPERATOR`         | Surfaces and explains risks                     | Indirect     | Treno, TokenLogic, RiskDAO           |
+| `OPERATOR`         | Surfaces and explains risks                     | Indirect     | TokenLogic, RiskDAO           |
 | `TEAM`             | Develops and maintains the application logic    | Direct       | Aave team, Compound Labs, Lido DAO   |
 | `BASE`       | Maintains base blockchain network               | Direct       | Ethereum Foundation, Solana Labs     |
 | `PROVIDER`       | Provides external services to protocols         | Partial      | Chainlink, LayerZero, Fireblocks     |
@@ -47,7 +47,7 @@ Investors cannot directly fix most risks, but they are the ones affected. Their 
 ## 🛰 `OPERATOR`
 
 **Scope:**  
-Risk monitoring platforms and analytics services (e.g. Treno, TokenLogic).
+Risk monitoring platforms and analytics services (e.g. TokenLogic).
 
 **Responsibility:**  
 Not directly responsible for the risk itself, but they provide the **visibility** required to act on it. They contextualize, categorize, and escalate.

@@ -10,7 +10,7 @@ The Web3 Open Risk Framework is an open-source initiative that provides:
 - Documentation and guidelines
 - Community-driven best practices
 
-This framework serves as the foundation for various implementations, including the proprietary catalogue by Treno Solutions GmbH.
+This framework serves as the foundation for various implementations.
 
 ## How to Contribute
 
@@ -131,7 +131,7 @@ By contributing to this project, you agree that your contributions will be licen
 For questions about contributing:
 
 - **GitHub Issues:** Use the Issues page for technical discussions
-- **Email:** info@treno.solutions (for general inquiries)
+- **Email:** kontakt@benjamin-damm.ch (for general inquiries)
 
 ## Acknowledgments
 

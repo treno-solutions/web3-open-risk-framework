@@ -4,7 +4,7 @@
 |------------------|--------------------------|
 | **Risk ID**      | R:DECREASING_YIELD       |
 | **Date**         | 2025-05-29               |
-| **Assessed By**  | Treno Analyst Team       |
+| **Assessed By**  | Community Analyst Team       |
 | **Severity**     | MEDIUM                   |
 | **Likelihood**   | HIGH                     |
 | **Persistence**  | PERSISTENT               |
