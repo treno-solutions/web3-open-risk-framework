@@ -91,7 +91,7 @@ Each component is designed to be forked, extended, or integrated into your own c
 For questions about the framework:
 
 - **GitHub Issues:** Use the Issues page for technical discussions
-- **Email:** info@treno.solutions (for general inquiries)
+- **Email:** kontakt@benjamin-damm.ch
 
 ## External
 
