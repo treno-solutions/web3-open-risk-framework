@@ -35,6 +35,6 @@ This framework is open source and community-driven. We welcome contributions fro
 - Share real-world case studies and experiences
 - Help with translations and localization
 
-**Repository:** https://github.com/treno-solutions/web3-open-risk-framework
+**Repository:** https://github.com/benjamindamm/web3-open-risk-framework
 
 **License:** Creative Commons Attribution 4.0 International 
