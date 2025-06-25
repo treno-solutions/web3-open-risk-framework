@@ -2,8 +2,6 @@
 
 A comprehensive, open-source framework for Web3 risk assessment and management.
 
----
-
 ## 🔍 Why We Built This
 
 Web3 has unlocked a new world of financial autonomy and innovation, but it also introduces complex, layered, and often opaque risks.
@@ -27,10 +25,6 @@ This framework was developed to address a critical gap: the absence of structure
 - What are the potential measures? *(Note: Not all mitigation details are published for security reasons.)*
 
 We originally built this to support our own risk analysis. Now we're sharing it — for those who want to approach risk with clarity, consistency, and accountability.
-
-👉 We also explore many of these risks in practice on our [Treno.Finance Blog](https://treno.finance), where we regularly analyze DeFi mechanisms, failure cases, and risk patterns.
-
----
 
 ## 🧱 What's Included
 
@@ -63,8 +57,6 @@ This framework includes:
 - 🫆 **Risk Assessment Guide**  
   Provides a model for rating likelihood and financial impact (the two key axes for risk assessment and risk matrices), with optional support for persistence and integration with risk indicators.
 
----
-
 ## 📚 File Overview
 
 This repository is organized by function. Each file defines a reusable part of the framework:
@@ -85,8 +77,6 @@ This repository is organized by function. Each file defines a reusable part of t
 
 Each component is designed to be forked, extended, or integrated into your own catalog or application.
 
----
-
 ## 🧰 Use Cases
 
 - Crypto asset due diligence  
@@ -96,11 +86,13 @@ Each component is designed to be forked, extended, or integrated into your own c
 - Internal risk dashboards and tooling  
 - Strategy development for allocators and asset managers
 
----
-
 ## Contact
 
 For questions about the framework:
 
 - **GitHub Issues:** Use the Issues page for technical discussions
 - **Email:** info@treno.solutions (for general inquiries)
+
+## External
+
+👉 For practical risk analysis examples, see the [Treno.Finance Blog](https://treno.finance/blog) where they regularly analyze DeFi mechanisms, failure cases, and risk patterns.
