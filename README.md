@@ -1,6 +1,91 @@
 # 🗻Web3 Open Risk Framework
 
-An open-source structure for mapping and understanding crypto-native risks – from smart contracts to governance failures.
+A comprehensive, open-source framework for Web3 risk assessment and management.
+
+## Overview
+
+The Web3 Open Risk Framework provides a structured methodology for identifying, analyzing, and mitigating risks in decentralized systems. This framework serves as the foundation for various implementations and can be adapted to different use cases and requirements.
+
+## Features
+
+- **Comprehensive Methodology**: Complete risk assessment approach
+- **Standardized Templates**: Consistent structure for risks, indicators, and assessments
+- **JSON Schemas**: Validation rules for data integrity
+- **Professional Documentation**: Detailed guides and examples
+- **Open Source**: Creative Commons Attribution 4.0 International License
+
+## Quick Start
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/treno-solutions/web3-open-risk-framework.git
+   cd web3-open-risk-framework
+   ```
+
+2. Generate PDF documentation:
+   ```bash
+   cd book
+   ./make-book.sh
+   ```
+
+### Usage
+
+The framework provides:
+
+- **Templates** for creating risk entries
+- **Schemas** for validation
+- **Methodology** for assessment procedures
+- **Documentation** for implementation guidance
+
+## Documentation
+
+- [Philosophy](philosophy.md) - Core principles and approach
+- [Methodology](methodology.md) - Assessment procedures
+- [Categories](categories.md) - Risk categorization
+- [Types](types.md) - Risk types and classifications
+- [Scopes](scopes.md) - Assessment scopes
+- [Objectives](objectives.md) - Investment objectives
+- [Owners](owners.md) - Risk ownership
+- [Terminology](terminology.md) - Glossary of terms
+
+## Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+
+### Quick Start for Contributors
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## Code of Conduct
+
+This project adheres to a [Code of Conduct](CODE_OF_CONDUCT.md). Please read it before contributing.
+
+## License
+
+This framework is licensed under the Creative Commons Attribution 4.0 International License.
+
+## Implementations
+
+This framework serves as the foundation for various implementations:
+
+- **[Web3 Open Risk Catalogue](https://github.com/treno-solutions/risk-catalogue)** - Comprehensive risk catalogue by Treno Solutions GmbH
+- *Your implementation here* - Add your implementation to this list
+
+## Contact
+
+For questions about the framework:
+
+- **GitHub Issues:** Use the Issues page for technical discussions
+- **Email:** info@treno.solutions (for general inquiries)
+
+## Acknowledgments
+
+Thank you to all contributors who help improve the Web3 Open Risk Framework and make it accessible to the broader community!
 
 ---
 
