@@ -5,11 +5,11 @@ id: A:DECREASING_YIELD
 title: Assessment for Decreasing Yield Risk
 type: Assessment
 version: 1.0
-lastUpdate: 2025-05-29
+date: 2025-05-29
 riskId: R:DECREASING_YIELD
 assessedBy: Community Analyst Team
 severity: MEDIUM
-likelihood: HIGH
+likelihood: LIKELY
 persistence: PERSISTENT
 ```
 

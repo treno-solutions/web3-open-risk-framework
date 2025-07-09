@@ -95,7 +95,27 @@
       }
     },
     "interpretation": { "type": "string" },
-    "notes": { "type": "string" }
+    "notes": { "type": "string" },
+    "id": {
+      "type": "string",
+      "pattern": "^A:[A-Z_]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string",
+      "const": "Assessment"
+    },
+    "version": {
+      "type": "number",
+      "minimum": 0
+    },
+    "lastUpdate": {
+      "type": "string",
+      "format": "date"
+    }
   },
   "additionalProperties": false
 }

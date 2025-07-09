@@ -14,15 +14,17 @@ owners:
   - TEAM
   - OPERATOR
 objectives:
-  - objective: YIELD
+  - type: YIELD
     direction: DECREASE
     goal: INCREASE
-  - objective: VALUE
+  - type: VALUE
     direction: DECREASE
     goal: INCREASE
 indicatorWeights:
-  - I:LENDING_APY_TREND: 1.0
-  - I:UTILIZATION_RATIO: 0.6
+  - id: I:LENDING_APY_TREND
+    weight: 1.0
+  - id: I:UTILIZATION_RATIO
+    weight: 0.6
 measures:
   - M:REALLOCATE_CAPITAL
 ```

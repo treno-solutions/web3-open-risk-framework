@@ -6,7 +6,7 @@
   "properties": {
     "id": {
       "type": "string",
-      "pattern": "^R:[A-Z_]+$"
+      "pattern": "^R:[A-Z0-9_]+$"
     },
     "title": {
       "type": "string",
