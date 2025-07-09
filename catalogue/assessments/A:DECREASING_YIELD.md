@@ -1,13 +1,17 @@
 # 🧮 Assessment: A:DECREASING_YIELD
 
-| Field             | Value                    |
-|------------------|--------------------------|
-| **Risk ID**      | R:DECREASING_YIELD       |
-| **Date**         | 2025-05-29               |
-| **Assessed By**  | Community Analyst Team       |
-| **Severity**     | MEDIUM                   |
-| **Likelihood**   | HIGH                     |
-| **Persistence**  | PERSISTENT               |
+```yaml
+id: A:DECREASING_YIELD
+title: Assessment for Decreasing Yield Risk
+type: Assessment
+version: 1.0
+lastUpdate: 2025-05-29
+riskId: R:DECREASING_YIELD
+assessedBy: Community Analyst Team
+severity: MEDIUM
+likelihood: HIGH
+persistence: PERSISTENT
+```
 
 ## 🧠 Assessment Summary
 

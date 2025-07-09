@@ -1,12 +1,12 @@
 # Lending APY Trend
 
-| Field             | Value                    |
-|------------------|--------------------------|
-| **ID**           | I:LENDING_APY_TREND      |
-| **Title**        | Lending APY Trend        |
-| **Type**         | Indicator                |
-| **Version**      | 1.0                      |
-| **Last Update**  | 2025-01-27               |
+```yaml
+id: I:LENDING_APY_TREND
+title: Lending APY Trend
+type: Indicator
+version: 1.0
+lastUpdate: 2025-01-27
+```
 
 ## 🧠 Description
 

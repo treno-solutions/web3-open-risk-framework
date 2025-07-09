@@ -1,12 +1,12 @@
 # Utilization Ratio
 
-| Field            | Value                    |
-|------------------|--------------------------|
-| **ID**           | I:UTILIZATION_RATIO      |
-| **Title**        | Utilization Ratio        |
-| **Type**         | Indicator                |
-| **Version**      | 1.0                      |
-| **Last Update**  | 2025-05-28               |
+```yaml
+id: I:UTILIZATION_RATIO
+title: Utilization Ratio
+type: Indicator
+version: 1.0
+lastUpdate: 2025-05-28
+```
 
 ## 🧠 Description
 

@@ -13,7 +13,7 @@ owners:
   - INVESTOR
   - TEAM
   - OPERATOR
-investmentImpact:
+objectives:
   - objective: YIELD
     direction: DECREASE
     goal: INCREASE
