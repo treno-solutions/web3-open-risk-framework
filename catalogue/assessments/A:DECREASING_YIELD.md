@@ -11,6 +11,23 @@ assessedBy: Community Analyst Team
 severity: MEDIUM
 likelihood: LIKELY
 persistence: PERSISTENT
+indicatorWeights:
+  - id: I:LENDING_APY_TREND
+    weight: 1.0
+    threshold: "-5%"
+    affects:
+      LIKELIHOOD: INCREASE
+      SEVERITY: INCREASE
+    timeframe: "30d"
+    description: "Declining APY trends indicate reduced protocol attractiveness"
+  - id: I:UTILIZATION_RATIO
+    weight: 0.6
+    threshold: "85%"
+    affects:
+      LIKELIHOOD: INCREASE
+      PERSISTENCE: INCREASE
+    timeframe: "24h"
+    description: "High utilization can lead to liquidity constraints and yield pressure"
 ```
 
 ## 🧠 Assessment Summary

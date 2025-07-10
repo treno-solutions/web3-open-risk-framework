@@ -28,6 +28,46 @@
       "type": "string",
       "enum": ["TEMPORARY", "OCCASIONAL", "PERSISTENT"]
     },
+    "indicatorWeights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "weight"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^I:[A-Z_]+$"
+          },
+          "weight": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "threshold": {
+            "type": "string",
+            "description": "Optional threshold value for this indicator"
+          },
+          "affects": {
+            "type": "object",
+            "properties": {
+              "SEVERITY": { "type": "string", "enum": ["INCREASE", "DECREASE"] },
+              "LIKELIHOOD": { "type": "string", "enum": ["INCREASE", "DECREASE"] },
+              "PERSISTENCE": { "type": "string", "enum": ["INCREASE", "DECREASE"] }
+            },
+            "additionalProperties": false
+          },
+          "timeframe": {
+            "type": "string",
+            "description": "Timeframe for this indicator (e.g., '24h', '7d', '30d')"
+          },
+          "description": {
+            "type": "string",
+            "description": "Optional description of how this indicator affects the risk"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
     "summary": {
       "type": "string"
     },

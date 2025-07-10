@@ -20,11 +20,6 @@ objectives:
   - type: VALUE
     direction: DECREASE
     goal: INCREASE
-indicatorWeights:
-  - id: I:LENDING_APY_TREND
-    weight: 1.0
-  - id: I:UTILIZATION_RATIO
-    weight: 0.6
 measures:
   - M:REALLOCATE_CAPITAL
 ```
@@ -69,16 +64,6 @@ At the time of assessment, the majority of capital was allocated to Compound due
 - **I:UTILIZATION_RATIO**: Utilization Ratio
 
 Combining APY Trend (long-term sustainability) with Utilization Ratio (short-term liquidity risk) provides comprehensive lending risk monitoring.
-
-### ⚖️ Indicator Weights
-
-Indicator weights define relative importance. Here, the APY Trend fully (weight = 1.0) determines whether the risk escalates, while Utilization Ratio (weight = 0.6) has a supplementary influence.
-
-```yaml
-indicatorWeights:
-  - I:LENDING_APY_TREND: 1.0
-  - I:UTILIZATION_RATIO: 0.6
-```
 
 ## 🛠 Measures
 

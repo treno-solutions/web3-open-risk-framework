@@ -54,34 +54,6 @@
         }
       }
     },
-    "indicatorWeights": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["id", "weight"],
-        "properties": {
-          "id": {
-            "type": "string",
-            "pattern": "^I:[A-Z_]+$"
-          },
-          "weight": {
-            "type": "number",
-            "minimum": 0,
-            "maximum": 1
-          },
-          "affects": {
-            "type": "object",
-            "properties": {
-              "SEVERITY": { "type": "string", "enum": ["INCREASE", "DECREASE"] },
-              "LIKELIHOOD": { "type": "string", "enum": ["INCREASE", "DECREASE"] },
-              "PERSISTENCE": { "type": "string", "enum": ["INCREASE", "DECREASE"] }
-            },
-            "additionalProperties": false
-          }
-        },
-        "additionalProperties": false
-      }
-    },
     "measures": {
       "type": "array",
       "items": {
