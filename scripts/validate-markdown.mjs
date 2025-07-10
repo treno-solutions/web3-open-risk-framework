@@ -5,8 +5,10 @@ import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
 
-const baseDir = path.resolve('../catalogue');
-const schemaDir = path.resolve('../schema');
+// Find the module root directory (where catalogue/ and schema/ folders are located)
+const scriptDir = path.dirname(new URL(import.meta.url).pathname);
+const baseDir = path.resolve(scriptDir, '../catalogue');
+const schemaDir = path.resolve(scriptDir, '../schema');
 
 const fileTypes = [
   {
